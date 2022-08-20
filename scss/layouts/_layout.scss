@@ -28,5 +28,6 @@ body {
   @if $debug == true {
     @include show-breakpoints;
   }
-
+  font-size: rem(18px);
+  font-family: "Gilroy";
 }
