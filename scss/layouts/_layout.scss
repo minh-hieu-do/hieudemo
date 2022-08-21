@@ -29,5 +29,7 @@ body {
     @include show-breakpoints;
   }
   font-size: rem(18px);
-  font-family: "Gilroy";
+  font-family: "Gilroy", sans-serif;
+  color:$text-color;
+  line-height: 1.6;
 }

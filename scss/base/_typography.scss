@@ -13,6 +13,7 @@ h6 {
 .h1,
 h1 {
   font-size: 54px;
+  font-weight: 500;
 }
 
 h2{
@@ -23,6 +24,39 @@ h3{
   font-size:32px;
 }
 
-body{
-  font-size:1rem(18px);
+a{
+  color:$brand-color;
+  font-weight: 500;
+  font-family:Poppins;
+  text-decoration: none;
+  font-size:16px;
 }
+
+.list{
+  ol{
+    padding-left:20px;
+    li{
+      list-style-type:decimal;
+    }
+  }
+  ul{
+    li{
+      position: relative;
+      padding-left: rem(34px);
+      margin-bottom: rem(13px);
+      line-height: 30px;
+      &:before{
+        content:"";
+        background:black;
+        width: rem(3px);
+        height: rem(3px);
+        top: rem(10px);
+        position:absolute;
+        left:0;
+        display:inline-block;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+
