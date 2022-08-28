@@ -9,3 +9,16 @@
     @include container($susy-desktop);
   }
 }
+
+.container-desktop-wide {
+  @include susy-media(desktop) {
+    max-width: $container-desktop-wide-width;
+  }
+}
+
+  
+
+  
+
+
+
