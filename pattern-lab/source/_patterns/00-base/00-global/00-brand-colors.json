@@ -12,6 +12,78 @@
           },
           "only": true
         }
+      },
+      {
+        "include()": {
+          "pattern": "base-colors-item",
+          "with": {
+            "item": {
+              "name": "$black",
+              "id": "#000"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-colors-item",
+          "with": {
+            "item": {
+              "name": "$silver",
+              "id": "#ccc"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-colors-item",
+          "with": {
+            "item": {
+              "name": "$purple",
+              "id": "#7b2dee"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-colors-item",
+          "with": {
+            "item": {
+              "name": "$light-blue",
+              "id": "#17d6f5"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-colors-item",
+          "with": {
+            "item": {
+              "name": "$pigeon-post",
+              "id": "#aec9de"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-colors-item",
+          "with": {
+            "item": {
+              "name": "$dark-gray",
+              "id": "#2d2d2d"
+            }
+          },
+          "only": true
+        }
       }
     ]
   }
