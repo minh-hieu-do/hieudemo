@@ -15,12 +15,13 @@
 
 //Enable font-smoothing
 html {
-  @include helvetica;
+  @include ProximaNova;
   font-size: $base-font-size; // Don't modify static unit.
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   line-height: $base-line-height;
+  color: $text-color;
 }
 
 body {
@@ -28,8 +29,4 @@ body {
   @if $debug == true {
     @include show-breakpoints;
   }
-  font-size: rem(18px);
-  font-family: "Gilroy", sans-serif;
-  color:$text-color;
-  line-height: 1.6;
 }
