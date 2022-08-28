@@ -3,7 +3,20 @@
 //https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
 
 // EX
-@include font-face(Gilroy, fonts/Gilroy/Gilroy-SemiBold, 600, normal);
+@include font-face(Gilroy, fonts/Gilroy/Gilroy-Light, 300, normal);
 @include font-face(Gilroy, fonts/Gilroy/Gilroy-Regular, 400, normal);
-@include font-face(Gilroy, fonts/Gilroy/Gilroy-Medium, 500, normal);
 @include font-face(Gilroy, fonts/Gilroy/Gilroy-Italic, 400, italic);
+@include font-face(Gilroy, fonts/Gilroy/Gilroy-Medium, 500, normal);
+@include font-face(Gilroy, fonts/Gilroy/Gilroy-SemiBold, 600, normal);
+@include font-face(Gilroy, fonts/Gilroy/Gilroy-Bold, 700, normal);
+@include font-face(Gilroy, fonts/Gilroy/Gilroy-Black, 900, normal);
+
+
+@include font-face(ProximaNova, fonts/ProximaNova/ProximaNova-Regular, 400, normal);
+@include font-face(ProximaNova, fonts/ProximaNova/ProximaNova-Medium, 500, normal);
+@include font-face(ProximaNova, fonts/ProximaNova/ProximaNova-Semibold, 600, normal);
+@include font-face(ProximaNova, fonts/ProximaNova/ProximaNova-Bold, 700, normal);
+
+@include font-face(iconmoon, fonts/iconmoon/iconmoon, 400, normal);
+
+@include font-face(LibreBaskerville, fonts/LibreBaskerville,LibreBaskerville-Italic, 400, italic);
