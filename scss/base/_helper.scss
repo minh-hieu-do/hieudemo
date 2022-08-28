@@ -1,5 +1,14 @@
-.text--italic{
-    font-family:Gilroy,sans-serif;
-    font-weight: 400;
-    font-style: italic;
+.bg {
+    &--dark-gray {
+        background-color: $dark-gray;
+    }
+
+    &--white {
+        background-color: $white;
+    }
+
+    &--gradient-blue {
+        background-image: linear-gradient( to right, $blue, $light-blue);
+    }
 }
+
