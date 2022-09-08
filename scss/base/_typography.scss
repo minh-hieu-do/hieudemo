@@ -1,11 +1,229 @@
 // TYPOGRAPHY
 // Define all typographic styles in this file.
 
+//Heading
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-weight: normal;
+  @include Gilroy;
+  font-weight: 500;
+  color: $dark-gray;
+}
+
+h1 {
+  @include susy-media (tablet) {
+    font-size: rem(54px);
+  }
+  font-size: rem(50px);
+}
+
+h2 {
+  @include susy-media (tablet) {
+    font-size: rem(40px);
+  }
+  font-size: rem(32px);
+}
+
+h3 {
+  @include susy-media (tablet) {
+    font-size: rem(26px);
+  }
+  font-size: rem(24px);
+}
+
+h4 {
+  @include susy-media (tablet) {
+    font-size: rem(25px);
+  }
+  font-size: rem(23px);
+}
+
+h5 {
+  @include susy-media (tablet) {
+    font-size: rem(24px);
+  }
+  font-size: rem(22px);
+}
+
+h6 {
+  @include susy-media (tablet) {
+    font-size: rem(23px);
+  }
+  font-size: rem(21px);
+}
+
+%heading-white {
+  h1, h2, h3, h4, h5, h6 {
+    color: $white;
+  }
+}
+
+//Link
+ %link,
+.link {
+  text-decoration: none;
+
+  &,
+  &:active,
+  &:visited {
+    color: $primary-color;
+  }
+
+  &:hover,
+  &:focus {
+    outline: auto;
+  }
+
+  &--arrow {
+    position: relative;
+    padding-right: rem(30px);
+
+    &:after {
+      @include iconmoon;
+      content: $icon-right-arrow;
+      position: absolute;
+      right: 0;
+      top: rem(1px);
+    }
+
+    &:hover {
+      outline: auto;
+      text-decoration: none;
+    }
+  }
+
+  &--dark-gray {
+    color: $dark-gray;
+    font-weight: 400;
+
+    &:active {
+      color: $dark-gray;
+    }
+  }
+
+  &--white {
+    color: $white;
+  }
+}
+
+a {
+  @extend %link;
+}
+
+
+//List.
+%list,
+.list {
+  &--ul {
+    li {
+      position: relative;
+      padding-left: rem(34px);
+      margin-bottom: rem(13px);
+      line-height: rem(30px);
+
+      &:before {
+        content: "";
+        background: $dark-gray;
+        width: rem(3px);
+        height: rem(3px);
+        top: rem(10px);
+        position: absolute;
+        left: 0;
+        display: inline-block;
+        border-radius: 100%;
+      }
+    }
+  }
+
+  &--ol {
+    li {
+      list-style-type: decimal;
+    }
+  }
+
+}
+
+.list-wrap {
+  ul {
+    @extend %list--ul;
+  }
+
+  ol {
+    @extend %list--ol;
+  }
+}
+
+//Blockquote.
+blockquote {
+  font-family: LibreBaskerville;
+  font-weight: 400;
+  font-style: italic;
+  font-size: rem(25px);
+  display: block;
+
+  @include susy-media(tablet) {
+    font-size: rem(32px);
+  }
+  
+  &:before {
+    @include iconmoon;
+    content: $icon-quote;
+    font-size: rem(18px);
+    line-height: $base-line-height;
+    color: $light-blue;
+    margin-bottom: rem(20px);
+  }
+}
+ 
+abbr {
+  text-decoration: underline dotted;
+  cursor: help;
+  text-decoration-skip-ink: none;
+}
+
+kbd {
+  padding: rem(5px) rem(10px);
+  color: $white;
+  background-color: $black;
+  border-radius: rem(5px);
+}
+
+q {
+  quotes: unset;
+  &:before {
+    content: open-quote;
+  }
+
+  &:after {
+    content: close-quote;
+  }
+}
+
+code,
+samp  {
+  font-family: monospace;
+}
+
+//Table
+table {
+  text-align: center;
+
+  thead {
+    border-bottom: rem(1px) solid $dark-gray;
+  }
+
+  th {
+    padding: rem(20px);
+    font-weight: 700;
+  }
+  
+  td {
+    @extend th;
+    border-bottom: rem(1px) solid $silver;
+    margin: auto;
+    font-weight: 400;
+  }
 }

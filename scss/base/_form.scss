@@ -1,0 +1,35 @@
+%form-text {
+  padding: rem(8px);
+  width: 100%;
+
+  &:focus {
+    outline: 1px solid $dark-gray;
+  }
+}
+
+.form {
+  &-item {
+    margin-bottom: rem(20px);
+  }
+
+  &-text,
+  &-textarea {
+    @extend %form-text;
+  }
+
+  &-radios,
+  &-checkboxes {
+    label {
+      display: inline;
+    }
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: rem(5px);
+}
+
+legend {
+  margin-bottom: rem(10px);
+}

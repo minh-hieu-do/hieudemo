@@ -34,6 +34,96 @@
                   "only": true
                 }
               }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-example-item",
+                  "with": {
+                    "blockExampleItem": {
+                      "counter": "20",
+                      "character": "+",
+                      "name": "Patents"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-example-item",
+                  "with": {
+                    "blockExampleItem": {
+                      "counter": "20",
+                      "character": "+",
+                      "name": "Patents"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-example-item",
+                  "with": {
+                    "blockExampleItem": {
+                      "counter": "20",
+                      "character": "+",
+                      "name": "Patents"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-example-item",
+                  "with": {
+                    "blockExampleItem": {
+                      "counter": "20",
+                      "character": "+",
+                      "name": "Patents"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-example-item",
+                  "with": {
+                    "blockExampleItem": {
+                      "counter": "20",
+                      "character": "+",
+                      "name": "Patents"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-example-item",
+                  "with": {
+                    "blockExampleItem": {
+                      "counter": "20",
+                      "character": "+",
+                      "name": "Patents"
+                    }
+                  },
+                  "only": true
+                }
+              }
             }
           ]
         },

@@ -1,8 +1,13 @@
 <div class="block-example">
   <div class="container">
     <div class="block-example__grid">{{ blockExample.items }}</div>
-    {% if blockExample.image is not empty %}
+    {# {% if blockExample.image is not empty %}
       <span class="block-example__image">{{ blockExample.image }}</span>
-    {% endif %}
+    {% endif %} #}
+    <div class="block-example__grid2">
+      <div class="block-example__grid2__left">test</div>
+      <div class="block-example__grid2__right">
+      <img src="https://picsum.photos/1024/710" alt="Image">
+    </div>
   </div>
 </div>

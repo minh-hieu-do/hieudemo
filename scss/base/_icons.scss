@@ -2,7 +2,7 @@
 // ICONS.
 
 %icons {
-  @include icomoon-ffw;
+  @include iconmoon;
 }
 
 [class^='icon-'],
@@ -15,5 +15,17 @@
 .icon-home {
   &:before {
     content: $icon-home;
+  }
+}
+
+.icon-right-arrow {
+  &:before {
+    content: $icon-right-arrow;
+  }
+}
+
+.icon-left-arrow {
+  &:before {
+    content: $icon-left-arrow;
   }
 }

@@ -1,0 +1,48 @@
+.block-example {
+  padding: 50px 0; }
+
+.block-example__grid {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start; }
+
+.block-example__item {
+  width: 100%;
+  margin-top: 30px;
+  background-color: red; }
+  @media (min-width: 48rem) {
+    .block-example__item {
+      margin-top: 40px;
+      margin-left: 5.14905%;
+      width: 47.42547%; }
+      .block-example__item:nth-child(2n + 1) {
+        margin-left: 0; }
+      .block-example__item:nth-child(1), .block-example__item:nth-child(2) {
+        margin-top: 0; } }
+  @media (min-width: 64rem) {
+    .block-example__item {
+      margin-left: 3.15789%;
+      width: 31.22807%; }
+      .block-example__item:nth-child(2n + 1) {
+        margin-left: 3.15789%; }
+      .block-example__item:nth-child(3n + 1) {
+        margin-left: 0; }
+      .block-example__item:nth-child(3) {
+        margin-top: 0; } }
+  .block-example__item:nth-child(1) {
+    margin-top: 0; }

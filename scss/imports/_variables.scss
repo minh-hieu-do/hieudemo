@@ -10,7 +10,10 @@ $desktop-superwide: 1440px;
 
 // Grid variables
 $container-margin: 10px;
-
+$container-desktop-margin: 67px;
+// $container-desktop-width: 890px;
+$container-desktop-wide: 1176px;
+$container-desktop-superwide: 1373px;
 $column-mobile: 4;
 $column-tablet: 8;
 $column-desktop: 12;
@@ -40,7 +43,7 @@ $susy: (
   container-position: rem($container-margin),
   container: auto,
   columns: $column-mobile,
-  gutters: 15px / 44px,
+  gutters: 11px / 44px,
   column-width: false,
   debug: (
     image: $show-image,
@@ -51,24 +54,55 @@ $susy: (
 );
 
 $susy-tablet: (
-  container-position: rem($container-margin * 4),
+  container-position: rem($container-margin * 2),
   container: auto,
   columns: $column-tablet,
-  gutters: 38px / 59px,
+  gutters: 8px / 40px,
   column-width: false,
   debug: (
     image: $show-image,
-    color: rgba($gray, .25),
+    color: rgba($gray, .25), 
     output: background,
     toggle: top right,
   ),
 );
 
 $susy-desktop: (
+  container-position: rem($container-desktop-margin),
+  container: auto,
   columns: $column-desktop,
   gutters: 36px / 62px,
-  container-position: rem($container-margin * 4),
-  container: auto,
+  column-width: false,
+  // columns: $column-desktop,
+  // gutters: 36px / 62px,
+  // container-position: center,
+  // container: $container-desktop-width,
+  debug: (
+    image: $show-image,
+    color: rgba($silver, .25),
+    output: background,
+    toggle: top right,
+  ),
+);
+
+$susy-desktop-wide: (
+  columns: $column-desktop,
+  gutters: 36px / 62px,
+  container-position: center,
+  container: $container-desktop-wide,
+  debug: (
+    image: $show-image,
+    color: rgba($silver, .25),
+    output: background,
+    toggle: top right,
+  ),
+);
+
+$susy-desktop-superwide: (
+  columns: $column-desktop,
+  gutters: 40px / 62px,
+  container-position: center,
+  container: $container-desktop-superwide,
   debug: (
     image: $show-image,
     color: rgba($silver, .25),
@@ -82,28 +116,33 @@ $susy-media: (
   // max-width: 769px
   mobileOnly: (
     media: screen,
-    max-width: em($tablet - 1) * 1em,
+    max-width: rem($tablet - 1),
   ),
 
   // max-width: 1999px
   mobileTabletOnly: (
     media: screen,
-    max-width: em($desktop - 1) * 1em,
+    max-width: rem($desktop - 1),
   ),
 
   // min-width: 480px
-  mobileLandscape: em($mobile-landscape) * 1em,
+  mobileLandscape: rem($mobile-landscape),
 
   // min-width: 768px and max-width: 1999px
   tabletOnly: (
     media: screen,
-    min-width: em($tablet) * 1em,
-    max-width: em($desktop - 1) * 1em,
+    min-width: rem($tablet),
+    max-width: rem($desktop - 1),
   ),
 
   // min-width: 768px
-  tablet: em($tablet) * 1em,
+  tablet: rem($tablet),
 
   // min-width: 1999px
-  desktop: em($desktop) * 1em,
+  desktop: rem($desktop),
+
+  // min-width: 1280px
+  desktopWide: rem($desktop-wide),
+
+  desktopSuperwide: rem($desktop-superwide),
 );
