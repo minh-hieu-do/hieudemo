@@ -6,3 +6,136 @@
 @import '../imports/variables';
 @import '../imports/mixins';
 @import '../imports/icons-variables';
+
+.block-example {
+  padding: 50px 0;
+}
+
+.block-example__grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.block-example__item {
+  width: span(4 of $susy);
+  margin-top: 30px;
+  background-color: red;
+
+  @include susy-media(tablet) {
+    margin-top: 40px;
+    margin-left: gutter($susy-tablet);
+    width: span(4 of $susy-tablet);
+
+    &:nth-child(2n + 1) {
+      margin-left: 0;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+
+  @include susy-media(desktop) {
+    margin-left: gutter($susy-desktop);
+    width: span(4 of $susy-desktop);
+
+    &:nth-child(2n + 1) {
+      margin-left: gutter($susy-desktop);
+    }
+
+    &:nth-child(3n + 1) {
+      margin-left: 0;
+    }
+
+    &:nth-child(3) {
+      margin-top: 0;
+    }
+  }
+
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+
+  @include susy-media(desktopWide) {
+    margin-left: gutter($susy-desktop-wide);
+    width: span(4 of $susy-desktop-wide);
+
+    &:nth-child(2n + 1) {
+      margin-left: gutter($susy-desktop-wide);
+    }
+
+    &:nth-child(3n + 1) {
+      margin-left: 0;
+    }
+
+    &:nth-child(3) {
+      margin-top: 0;
+    }
+  }
+  
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+
+  @include susy-media(desktopSuperwide) {
+    margin-left: gutter($susy-desktop-superwide);
+    width: span(4 of $susy-desktop-superwide);
+
+    &:nth-child(2n + 1) {
+      margin-left: gutter($susy-desktop-superwide);
+    }
+
+    &:nth-child(3n + 1) {
+      margin-left: 0;
+    }
+
+    &:nth-child(3) {
+      margin-top: 0;
+    }
+  }
+  
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+}
+
+.block-example__grid2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+  
+.block-example__grid2__right,
+.block-example__grid2__left {
+  width: 50%;
+}
+
+.block-example__grid2__left {
+  min-height: 400px;
+  background-color: red;
+}
+
+.block-example__grid2__right {
+  position: relative; // con img position: absolute; căn ke theo cha nay
+  overflow: hidden; // cắt image 2 bên
+  align-self: stretch; // Hight theo block-example__grid2__left
+
+  // Căn ke theo cha block-example__grid2__right và cắt 2 bên
+  img {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    max-width: inherit;
+    left: 50%; // kéo image về giữa
+    top: 0;
+    transform: translateX(-50%); // kéo image về giữa
+  }
+}

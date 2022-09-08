@@ -10,16 +10,18 @@ $desktop-superwide: 1440px;
 
 // Grid variables
 $container-margin: 10px;
-$container-desktop-width: 1192px;
-$container-desktop-wide-width: 1338px;
+$container-desktop-margin: 67px;
+// $container-desktop-width: 890px;
+$container-desktop-wide: 1176px;
+$container-desktop-superwide: 1373px;
 $column-mobile: 4;
 $column-tablet: 8;
 $column-desktop: 12;
 
 //Font variables
-$base-font-size: 18px;
-$base-line-height: 1.6;
-$base-spacing-bottom: 13px;
+$base-font-size: 16px;
+$base-line-height: 1.4;
+
 // Add global paths
 $image-path: '../images/';
 
@@ -41,7 +43,7 @@ $susy: (
   container-position: rem($container-margin),
   container: auto,
   columns: $column-mobile,
-  gutters: 15px / 44px,
+  gutters: 11px / 44px,
   column-width: false,
   debug: (
     image: $show-image,
@@ -55,7 +57,7 @@ $susy-tablet: (
   container-position: rem($container-margin * 2),
   container: auto,
   columns: $column-tablet,
-  gutters: 38px / 59px,
+  gutters: 8px / 40px,
   column-width: false,
   debug: (
     image: $show-image,
@@ -66,10 +68,41 @@ $susy-tablet: (
 );
 
 $susy-desktop: (
+  container-position: rem($container-desktop-margin),
+  container: auto,
+  columns: $column-desktop,
+  gutters: 36px / 62px,
+  column-width: false,
+  // columns: $column-desktop,
+  // gutters: 36px / 62px,
+  // container-position: center,
+  // container: $container-desktop-width,
+  debug: (
+    image: $show-image,
+    color: rgba($silver, .25),
+    output: background,
+    toggle: top right,
+  ),
+);
+
+$susy-desktop-wide: (
   columns: $column-desktop,
   gutters: 36px / 62px,
   container-position: center,
-  container: $container-desktop-width,
+  container: $container-desktop-wide,
+  debug: (
+    image: $show-image,
+    color: rgba($silver, .25),
+    output: background,
+    toggle: top right,
+  ),
+);
+
+$susy-desktop-superwide: (
+  columns: $column-desktop,
+  gutters: 40px / 62px,
+  container-position: center,
+  container: $container-desktop-superwide,
   debug: (
     image: $show-image,
     color: rgba($silver, .25),
@@ -107,4 +140,9 @@ $susy-media: (
 
   // min-width: 1999px
   desktop: rem($desktop),
+
+  // min-width: 1280px
+  desktopWide: rem($desktop-wide),
+
+  desktopSuperwide: rem($desktop-superwide),
 );

@@ -42,18 +42,6 @@
           "pattern": "base-colors-item",
           "with": {
             "item": {
-              "name": "$purple",
-              "id": "#7b2dee"
-            }
-          },
-          "only": true
-        }
-      },
-      {
-        "include()": {
-          "pattern": "base-colors-item",
-          "with": {
-            "item": {
               "name": "$light-blue",
               "id": "#17d6f5"
             }
@@ -80,6 +68,18 @@
             "item": {
               "name": "$dark-gray",
               "id": "#2d2d2d"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-colors-item",
+          "with": {
+            "item": {
+              "name": "$gray",
+              "id": "#727272"
             }
           },
           "only": true

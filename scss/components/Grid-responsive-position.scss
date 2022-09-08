@@ -1,0 +1,303 @@
+// // Create a separate component, we need to require some variables and mixins.
+// // Required imports
+// @import '../../vendor/susy/susy';
+// @import '../helpers/functions';
+// @import '../helpers/mixins';
+// @import '../base/colors';
+// @import '../base/variables';
+// // @import 'helpers/icons-variables';
+
+// .block-example {
+//   padding: 100px 0;
+//   // background-color: blue;
+// }
+
+
+// /************************************************ 1 GRID ****************************************************/
+// /****************************************************************************/
+// /*********************** items sắp xêp left to right /***********************/
+// /****************************************************************************/
+// /* Markup
+// <div class="block-example">
+//   <div class="container">
+//     <div class="block-example__grid">
+//       <div class="block-example__item></div>
+//       <div class="block-example__item></div>
+//       <div class="block-example__item></div>
+//       ...
+//     </div>
+//   </div>
+// </div>
+// */
+// // Option 1: Susy grid, items sắp xêp left to right -> float: left , float right, width và margin right theo %
+// // .block-example__grid {
+// //   @include clearfix;
+// // }
+
+// // .block-example__item {
+// //   @include span(4 of $susy-desktop); // float: left, width và margin right theo %
+// //   background-color: red;
+// //   margin-top: 40px;
+
+// //   &:nth-child(3n + 3) {
+// //     @include last; // float: right, margin right 0
+// //   }
+
+// //   &:nth-child(1),
+// //   &:nth-child(2),
+// //   &:nth-child(3) {
+// //     margin-top: 0; // giữ cân đổi với padding của cha .block-example
+// //   }
+// // }
+
+// // Option 2: calc + flex ,items sắp xêp left to right.-> width: calc % và margin right cố định px
+// // .block-example__grid {
+// //   display: flex;
+// //   flex-direction: row;
+// //   flex-wrap: wrap;
+// //   justify-content: flex-start;
+// //   align-content: flex-start;
+// //   align-items: flex-start;
+// // }
+
+// // .block-example__item {
+// //   width: calc((100% - 2*40px) / 3); // width %
+// //   margin-right: 40px; // margin right cố định px
+// //   background-color: red;
+// //   margin-top: 40px;
+
+// //   &:nth-child(3n + 3) {
+// //     margin-right: 0;
+// //   }
+
+// //   &:nth-child(1),
+// //   &:nth-child(2),
+// //   &:nth-child(3) {
+// //     margin-top: 0; // giữ cân đổi với padding của cha .block-example
+// //   }
+// // }
+// /*********************** End items sắp xêp left to right /***********************/
+// /********************************************************************************/
+
+
+// /****************************************************************************/
+// /*************************** items sắp xêp center ***************************/
+// /****************************************************************************/
+// // Option 1: Susy grid + flex -> calc % và margin right %
+// // .block-example__grid {
+// //   display: flex;
+// //   flex-direction: row;
+// //   flex-wrap: wrap;
+// //   justify-content: center;
+// //   align-content: flex-start;
+// //   align-items: center;
+// // }
+
+// // .block-example__item {
+// //   width: span(4 of $susy-desktop); // width %
+// //   margin-left: gutter($susy-desktop); // margin-left %
+// //   background-color: red;
+// //   margin-top: 40px;
+
+// //   &:nth-child(3n + 1) {
+// //     margin-left: 0;
+// //   }
+
+// //   &:nth-child(1),
+// //   &:nth-child(2),
+// //   &:nth-child(3) {
+// //     margin-top: 0; // giữ cân đổi với padding của cha .block-example
+// //   }
+// // }
+
+// // Option 2: calc + flex -> width: calc % và margin right cố định px
+// // .block-example__grid {
+// //   display: flex;
+// //   flex-direction: row;
+// //   flex-wrap: wrap;
+// //   justify-content: center;
+// //   align-content: flex-start;
+// //   align-items: center;
+// // }
+
+// // .block-example__item {
+// //   width: calc((100% - 2*40px) / 3); // width %
+// //   margin-right: 40px; // margin right cố định px
+// //   background-color: red;
+// //   margin-top: 40px;
+
+// //   &:nth-child(3n + 3) {
+// //     margin-right: 0;
+// //   }
+
+// //   &:nth-child(1),
+// //   &:nth-child(2),
+// //   &:nth-child(3) {
+// //     margin-top: 0; // giữ cân đổi với padding của cha .block-example
+// //   }
+// // }
+// /*********************** End items sắp xêp center /***********************/
+// /*************************************************************************/
+// /************************************************ END 1 GRID ****************************************************/
+
+// /************************************************ 2 RESPONSIVE ****************************************************/
+// /****************************************************************************/
+// /*************************** items responsive ***************************/
+// /****************************************************************************/
+// /*
+//   Mobile(screen < 768) : full width
+//   Tablet(screen >= 768 và screen < 1024): 2 columns
+//   Desktop(screen >= 1024 ): 3 columns
+// */
+
+// // .block-example__grid {
+// //   @include susy-media(tablet) {
+// //     display: flex;
+// //     flex-direction: row;
+// //     flex-wrap: wrap;
+// //     justify-content: center;
+// //     align-content: flex-start;
+// //     align-items: center;
+// //   }
+// // }
+
+// // .block-example__item {
+// //   background-color: red;
+// //   margin-top: 30px;
+
+// //   @include susy-media(tablet) {
+// //     width: span(4 of $susy-tablet);
+// //     margin-left: gutter($susy-tablet);
+// //     margin-top: 40px;
+
+// //     &:nth-child(2n + 1) {
+// //       margin-left: 0;
+// //     }
+
+// //     &:nth-child(2) {
+// //       margin-top: 0;
+// //     }
+// //   }
+
+// //   @include susy-media(desktop) {
+// //     width: span(4 of $susy-desktop);
+// //     margin-left: gutter($susy-desktop);
+
+// //     &:nth-child(2n + 1) {
+// //       margin-left: gutter($susy-desktop);
+// //     }
+
+// //     &:nth-child(3n + 1) {
+// //       margin-left: 0;
+// //     }
+
+// //     &:nth-child(3) {
+// //       margin-top: 0;
+// //     }
+// //   }
+
+// //   &:nth-child(1) {
+// //     margin-top: 0;
+// //   }
+// // }
+// /*********************** End items responsive /***********************/
+// /*************************************************************************/
+
+// /****************************************************************************/
+// /*************************** Container ***************************/
+// /****************************************************************************/
+// /*
+// // Path /scss/base/_variables.scss
+// // Đinh nghĩa thêm variable của container sử dụng cho media breakpoint desktopWide
+// $container-desktop-wide: 1176px;
+// ...
+// $susy-desktop-wide: (
+//   ...
+//   container-position: center,
+//   container: rem($container-desktop-wide),
+//   ...
+// );
+
+// // Định nghĩa thêm media breakpoint
+// $susy-media: (
+//  ...
+
+//  // min-width: 1280px
+//   desktopWide: em($desktop-wide) * 1em,
+// );
+// */
+
+// // Path /scss/base/_grid.scss
+// // .container {
+// //   @include container();
+
+// //   @include susy-media(tablet) {
+// //     @include container($susy-tablet);
+// //   }
+
+// //   @include susy-media(desktop) {
+// //     @include container($susy-desktop); // co kéo theo screen
+// //   }
+
+// //   @include susy-media(desktopWide) {
+// //     @include container($susy-desktop-wide); // Fix cứng layout
+// //   }
+// // }
+// /*********************** End Container /***********************/
+// /*************************************************************************/
+// /************************************************ END 2 RESPONSIVE ****************************************************/
+
+
+// /************************************************ 3 POSITIOM ****************************************************/
+// /****************************************************************************/
+// /*************************** Position: relative and absolute ****************/
+// /****************************************************************************/
+// /* Markup
+// <div class="block-example">
+//   <div class="container">
+//     <div class="block-example__grid2">
+//       <div class="block-example__grid2__left>test</div>
+//       <div class="block-example__grid2__right>
+//         <img src="https://picsum.photos/1024/710" alt="Image">
+//       </div>
+//     </div>
+//   </div>
+// </div>
+// */
+
+// .block-example__grid2 {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   justify-content: flex-start;
+//   align-content: flex-start;
+//   align-items: flex-start;
+// }
+
+// .block-example__grid2__right,
+// .block-example__grid2__left {
+//   width: 50%;
+// }
+
+// .block-example__grid2__left {
+//   min-height: 500px;
+//   background-color: red;
+// }
+
+// .block-example__grid2__right {
+//   position: relative; // con img position: absolute; căn ke theo cha nay
+//   overflow: hidden; // cắt image 2 bên
+//   align-self: stretch; // Hight theo block-example__grid2__left
+
+//   // Căn ke theo cha block-example__grid2__right và cắt 2 bên
+//   img {
+//     height: 100%;
+//     width: auto;
+//     position: absolute;
+//     max-width: inherit;
+//     left: 50%; // kéo image về giữa
+//     top: 0;
+//     transform: translateX(-50%); // kéo image về giữa
+//   }
+// }
+// /************************************************ END 3 RESPONSIVE ****************************************************/

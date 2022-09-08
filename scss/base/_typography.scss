@@ -8,78 +8,73 @@ h3,
 h4,
 h5,
 h6 {
+  @include Gilroy;
   font-weight: 500;
-  font-family: 'Gilroy', sans-serif;
+  color: $dark-gray;
 }
 
-.h1,
 h1 {
-  font-size: rem(54px);
+  @include susy-media (tablet) {
+    font-size: rem(54px);
+  }
+  font-size: rem(50px);
 }
 
 h2 {
-  font-size: rem(40px);
-}
-
-h3 {
+  @include susy-media (tablet) {
+    font-size: rem(40px);
+  }
   font-size: rem(32px);
 }
 
+h3 {
+  @include susy-media (tablet) {
+    font-size: rem(26px);
+  }
+  font-size: rem(24px);
+}
+
 h4 {
-  font-size: rem(30px);
+  @include susy-media (tablet) {
+    font-size: rem(25px);
+  }
+  font-size: rem(23px);
 }
 
 h5 {
-  font-size: rem(28px);
+  @include susy-media (tablet) {
+    font-size: rem(24px);
+  }
+  font-size: rem(22px);
 }
 
 h6 {
-  font-size: rem(26px);
+  @include susy-media (tablet) {
+    font-size: rem(23px);
+  }
+  font-size: rem(21px);
 }
 
-@include susy-media(mobileOnly) {
-  h1 {
-    font-size: rem(35px);
-  }
-
-  h2 {
-    font-size: rem(22px);
-  }
-
-  h3 {
-    font-size: rem(13px);
-  }
-
-  h4 {
-    font-size: rem(12px);
-  }
-
-  h5 {
-    font-size: rem(12px);
-  }
-  
-  h6 {
-    font-size: rem(12px);
+%heading-white {
+  h1, h2, h3, h4, h5, h6 {
+    color: $white;
   }
 }
-
 
 //Link
-
  %link,
 .link {
-  font-weight: 600;
   text-decoration: none;
 
   &,
   &:active,
   &:visited {
-    color: $blue;
+    color: $primary-color;
   }
 
   &:hover,
   &:focus {
-    text-decoration: underline;
+    outline: auto;
   }
 
   &--arrow {
@@ -88,20 +83,15 @@ h6 {
 
     &:after {
       @include iconmoon;
-      color: inherit !important;
       content: $icon-right-arrow;
       position: absolute;
       right: 0;
       top: rem(1px);
-      transition: 0.3s ease-in;
     }
 
     &:hover {
+      outline: auto;
       text-decoration: none;
-
-      &:after {
-        right: rem(-5px);
-      }
     }
   }
 
@@ -113,6 +103,10 @@ h6 {
       color: $dark-gray;
     }
   }
+
+  &--white {
+    color: $white;
+  }
 }
 
 a {
@@ -121,41 +115,44 @@ a {
 
 
 //List.
-%list-ol,
-.list-ol {
-    li {
-      list-style-type: decimal;
-    }
-  }
-
-%list-ul,
-.list-ul {
+%list,
+.list {
+  &--ul {
     li {
       position: relative;
       padding-left: rem(34px);
-      margin-bottom: $base-spacing-bottom;
+      margin-bottom: rem(13px);
       line-height: rem(30px);
-      &:before{
-        content:"";
-        background: black;
+
+      &:before {
+        content: "";
+        background: $dark-gray;
         width: rem(3px);
         height: rem(3px);
         top: rem(10px);
         position: absolute;
-        left:0;
+        left: 0;
         display: inline-block;
         border-radius: 100%;
       }
     }
   }
 
+  &--ol {
+    li {
+      list-style-type: decimal;
+    }
+  }
+
+}
+
 .list-wrap {
   ul {
-    @extend .list-ul;
+    @extend %list--ul;
   }
 
   ol {
-    @extend .list-ol;
+    @extend %list--ol;
   }
 }
 
@@ -164,11 +161,11 @@ blockquote {
   font-family: LibreBaskerville;
   font-weight: 400;
   font-style: italic;
-  font-size: rem(32px);
+  font-size: rem(25px);
   display: block;
 
-  @include susy-media(mobileOnly) {
-    font-size: rem(16px);
+  @include susy-media(tablet) {
+    font-size: rem(32px);
   }
   
   &:before {
@@ -180,33 +177,10 @@ blockquote {
     margin-bottom: rem(20px);
   }
 }
-
-//Inline-element.
-
-sub, sup {
-  position: relative;
-  font-size: .75em;
-  line-height: 0;
-  vertical-align: baseline;
-}
-
-sup {
-  top: rem(-5px);
-}
-
-sub {
-  bottom: rem(-5px);
-}
-
-small {
-  font-size: rem(14px);
-}
-
+ 
 abbr {
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   cursor: help;
-  -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
 }
 
@@ -219,7 +193,6 @@ kbd {
 
 q {
   quotes: unset;
-  display: inline;
   &:before {
     content: open-quote;
   }
@@ -229,118 +202,28 @@ q {
   }
 }
 
-code {
-  font-size: rem(30px);
-  color: $pink;
-}
-
+code,
 samp  {
   font-family: monospace;
 }
 
-cite, dfn, var { 
-  font-style: italic;
-}
-
-//Paragraph
-
-p {
-  margin-bottom: $base-spacing-bottom;
-
-  @include susy-media(mobileOnly) {
-    font-size: rem(12px);
-    margin-bottom: rem(34px);
-  }
-}
-
-.font--large { 
-  font-size: rem(22px);
-}
-
-.font--medium {
-  font-size: rem(20px);
-}
-
-.font--normal {
-  font-size: $base-font-size;
-}
-
-.font--small {
-  font-size: rem(14px) ;
-}
-
-.text--bold {
-  font-weight: 700;
-}
-
-.text--semibold {
-  font-weight: 600;
-}
-
-.text--medium {
-  font-weight: 500;
-}
-
-.text--normal {
-  font-weight: 400;
-}
-
-.text--light {
-  font-weight: 300;
-}
-
-.text--italic {
-  font-style: italic;
-}
-
-.text--black {
-  color: $black;
-}
-
 //Table
-
 table {
   text-align: center;
-}
 
-thead {
-  border-bottom: rem(1px) solid $dark-gray;
-}
+  thead {
+    border-bottom: rem(1px) solid $dark-gray;
+  }
 
-th {
-  padding: rem(20px);
-  font-weight: 700;
-}
-
-td {
-  @extend th;
-  border-bottom: 1px solid $silver;
-  margin: auto;
-  font-weight: 400;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-q,
-ul,
-li,
-code,
-samp,
-small,
-var,
-dfn,
-abbr,
-sub,
-sup {
-  .bg--dark-gray &,
-  .bg--gradient-blue &,
-  .bg--blue & {
-    color: $white;
+  th {
+    padding: rem(20px);
+    font-weight: 700;
+  }
+  
+  td {
+    @extend th;
+    border-bottom: rem(1px) solid $silver;
+    margin: auto;
+    font-weight: 400;
   }
 }

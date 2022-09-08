@@ -1,38 +1,35 @@
-.form-textarea,
-.form-text { 
-    padding: rem(8px);
-    font-size: $base-font-size;
-    width: 100%;
-    
-    &:focus {
-        outline: 0;
-        border: 1px solid $blue;
-        box-shadow: 0 0 0 rem(5px) rgba($light-blue, 0.3);
-        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    }
+%form-text {
+  padding: rem(8px);
+  width: 100%;
+
+  &:focus {
+    outline: 1px solid $dark-gray;
+  }
 }
 
-.form-item{
+.form {
+  &-item {
     margin-bottom: rem(20px);
+  }
+
+  &-text,
+  &-textarea {
+    @extend %form-text;
+  }
+
+  &-radios,
+  &-checkboxes {
+    label {
+      display: inline;
+    }
+  }
 }
 
 label {
-    display: block;
-    margin-bottom: rem(5px);
-    font-size: $base-font-size;
-}
-
-.form-text {
-    height: rem(40px);
-}
-
-.form-radios,
-.form-checkboxes {
-    label {
-        display: inline;
-    }
+  display: block;
+  margin-bottom: rem(5px);
 }
 
 legend {
-    margin-bottom: rem(10px);
+  margin-bottom: rem(10px);
 }

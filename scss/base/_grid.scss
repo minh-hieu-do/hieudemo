@@ -8,17 +8,8 @@
   @include susy-media(desktop) {
     @include container($susy-desktop);
   }
-}
 
-.container-desktop-wide {
-  @include susy-media(desktop) {
-    max-width: $container-desktop-wide-width;
+  @include susy-media(desktopWide) {
+    @include container($susy-desktop-wide);
   }
 }
-
-  
-
-  
-
-
-
