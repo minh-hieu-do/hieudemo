@@ -1,15 +1,10 @@
 .bg {
   &--dark-gray {
     background: $dark-gray;
-    color: $white !important;
   }
 
   &--primary-color {
     background-color: $primary-color;
-  }
-
-  &--white {
-    background-color: $white;
   }
 
   &--gradient-blue {
@@ -17,7 +12,7 @@
   }
 
   &--gradient-blue,
-  &--primary-color,
+  &--primary-color, 
   &--dark-gray {
     @extend %heading-white;
     color: $white;
@@ -25,29 +20,18 @@
     a {
       @extend %link--white;
     }
+    
+    .link--arrow {
+      &:after {
+        color: $white;
+      }
+    }
   }
 }
 
 .font {
-  &--large {
-    @include susy-media(tablet) {
-      font-size: rem(22x);
-    }
-    font-size: rem(20px);
-  }
-  
-  &--medium {
-    @include susy-media(tablet) {
-      font-size: rem(21px);
-    }
-    font-size: rem(19px);
-  }
-  
-  &--small {
-    @include susy-media(tablet) {
-      font-size: rem(20px);
-    }
-    font-size: rem(15px) ;
+  &--gilroy {
+    @include Gilroy;
   }
 }
 
@@ -78,10 +62,6 @@
   
   &--white {
     color: $white;
-  }
-  
-  &--black {
-    color: $black;
   }
 }
 

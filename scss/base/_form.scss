@@ -4,24 +4,28 @@
 
   &:focus {
     outline: 1px solid $dark-gray;
+    border: 1px solid $dark-gray;
   }
 }
 
-.form {
-  &-item {
-    margin-bottom: rem(20px);
-  }
+.form-item {
+  margin-bottom: rem(20px);
+}
 
-  &-text,
-  &-textarea {
-    @extend %form-text;
-  }
+.form-text,
+.form-textarea {
+  @extend %form-text;
+}
 
-  &-radios,
-  &-checkboxes {
-    label {
-      display: inline;
-    }
+.form-checkbox,
+.form-radio {
+  accent-color: $primary-color;
+}
+
+.form-radios,
+.form-checkboxes {
+  label {
+    display: inline;
   }
 }
 

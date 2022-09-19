@@ -10,10 +10,9 @@ $desktop-superwide: 1440px;
 
 // Grid variables
 $container-margin: 10px;
-$container-desktop-margin: 67px;
-// $container-desktop-width: 890px;
+$container-desktop-margin: 66px;
 $container-desktop-wide: 1176px;
-$container-desktop-superwide: 1373px;
+// $container-desktop-superwide: 1373px;
 $column-mobile: 4;
 $column-tablet: 8;
 $column-desktop: 12;
@@ -43,7 +42,7 @@ $susy: (
   container-position: rem($container-margin),
   container: auto,
   columns: $column-mobile,
-  gutters: 11px / 44px,
+  gutters: 5px / 40px,
   column-width: false,
   debug: (
     image: $show-image,
@@ -57,7 +56,7 @@ $susy-tablet: (
   container-position: rem($container-margin * 2),
   container: auto,
   columns: $column-tablet,
-  gutters: 8px / 40px,
+  gutters: 20px / 42px,
   column-width: false,
   debug: (
     image: $show-image,
@@ -71,12 +70,8 @@ $susy-desktop: (
   container-position: rem($container-desktop-margin),
   container: auto,
   columns: $column-desktop,
-  gutters: 36px / 62px,
+  gutters: 40px / 62px,
   column-width: false,
-  // columns: $column-desktop,
-  // gutters: 36px / 62px,
-  // container-position: center,
-  // container: $container-desktop-width,
   debug: (
     image: $show-image,
     color: rgba($silver, .25),
@@ -87,22 +82,9 @@ $susy-desktop: (
 
 $susy-desktop-wide: (
   columns: $column-desktop,
-  gutters: 36px / 62px,
+  gutters: 28px / 60px,
   container-position: center,
   container: $container-desktop-wide,
-  debug: (
-    image: $show-image,
-    color: rgba($silver, .25),
-    output: background,
-    toggle: top right,
-  ),
-);
-
-$susy-desktop-superwide: (
-  columns: $column-desktop,
-  gutters: 40px / 62px,
-  container-position: center,
-  container: $container-desktop-superwide,
   debug: (
     image: $show-image,
     color: rgba($silver, .25),

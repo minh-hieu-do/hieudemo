@@ -29,3 +29,9 @@
     content: $icon-left-arrow;
   }
 }
+
+.icon-read-more {
+  &:after {
+    content: $icon-read-more;
+  }
+}

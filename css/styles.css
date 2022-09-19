@@ -229,8 +229,8 @@ embed {
   max-width: 100%;
   margin-left: 0.625rem;
   margin-right: 0.625rem;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(38, 38, 38, 0.25) 80%, transparent 80%);
-  background-size: 26.31579%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(38, 38, 38, 0.25) 88.88889%, transparent 88.88889%);
+  background-size: 25.71429%;
   background-origin: content-box;
   background-clip: content-box;
   background-position: left top; }
@@ -243,8 +243,8 @@ embed {
       max-width: 100%;
       margin-left: 1.25rem;
       margin-right: 1.25rem;
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(38, 38, 38, 0.25) 83.33333%, transparent 83.33333%);
-      background-size: 12.76596%;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(38, 38, 38, 0.25) 67.74194%, transparent 67.74194%);
+      background-size: 13.02521%;
       background-origin: content-box;
       background-clip: content-box;
       background-position: left top; }
@@ -255,10 +255,10 @@ embed {
   @media (min-width: 64rem) {
     .container {
       max-width: 100%;
-      margin-left: 4.1875rem;
-      margin-right: 4.1875rem;
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(38, 38, 38, 0.25) 63.26531%, transparent 63.26531%);
-      background-size: 8.59649%;
+      margin-left: 4.125rem;
+      margin-right: 4.125rem;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(38, 38, 38, 0.25) 60.78431%, transparent 60.78431%);
+      background-size: 8.61486%;
       background-origin: content-box;
       background-clip: content-box;
       background-position: left top; }
@@ -271,8 +271,8 @@ embed {
       max-width: 1176px;
       margin-left: auto;
       margin-right: auto;
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(38, 38, 38, 0.25) 63.26531%, transparent 63.26531%);
-      background-size: 8.59649%;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(38, 38, 38, 0.25) 68.18182%, transparent 68.18182%);
+      background-size: 8.56031%;
       background-origin: content-box;
       background-clip: content-box;
       background-position: left top; }
@@ -302,6 +302,9 @@ embed {
 .icon-left-arrow:before {
   content: ""; }
 
+.icon-read-more:after {
+  content: ""; }
+
 h1,
 h2,
 h3,
@@ -325,74 +328,59 @@ h2 {
       font-size: 2.5rem; } }
 
 h3 {
-  font-size: 1.5rem; }
+  font-size: 1.75rem; }
   @media (min-width: 48rem) {
     h3 {
-      font-size: 1.625rem; } }
+      font-size: 2.25rem; } }
 
 h4 {
-  font-size: 1.4375rem; }
+  font-size: 1.5625rem; }
   @media (min-width: 48rem) {
     h4 {
-      font-size: 1.5625rem; } }
+      font-size: 2rem; } }
 
 h5 {
   font-size: 1.375rem; }
   @media (min-width: 48rem) {
     h5 {
-      font-size: 1.5rem; } }
+      font-size: 1.75rem; } }
 
 h6 {
-  font-size: 1.3125rem; }
+  font-size: 1.1875rem; }
   @media (min-width: 48rem) {
     h6 {
-      font-size: 1.4375rem; } }
+      font-size: 1.5rem; } }
 
 .bg--gradient-blue h1, .bg--primary-color h1, .bg--dark-gray h1, .bg--gradient-blue h2, .bg--primary-color h2, .bg--dark-gray h2, .bg--gradient-blue h3, .bg--primary-color h3, .bg--dark-gray h3, .bg--gradient-blue h4, .bg--primary-color h4, .bg--dark-gray h4, .bg--gradient-blue h5, .bg--primary-color h5, .bg--dark-gray h5, .bg--gradient-blue h6, .bg--primary-color h6, .bg--dark-gray h6 {
   color: #fff; }
 
 a,
 .link {
-  text-decoration: none; }
-  a, a:active, a:visited,
-  .link,
-  .link:active,
-  .link:visited {
-    color: #1381d7; }
-  a:hover, a:focus,
-  .link:hover,
+  text-decoration: none;
+  color: #1381d7;
+  font-size: 1.125rem; }
+  a:focus,
   .link:focus {
-    outline: auto; }
+    outline: 3px solid orange; }
+  a:hover,
+  .link:hover {
+    color: #0d5791; }
   
-  .link--arrow {
-    position: relative;
-    padding-right: 1.875rem; }
-    
-    .link--arrow:after {
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-font-smoothing: antialiased;
-      font-family: 'iconmoon';
-      font-style: normal;
-      font-variant: normal;
-      font-weight: normal;
-      line-height: 1;
-      speak: none;
-      text-transform: none;
-      content: "";
-      position: absolute;
-      right: 0;
-      top: 0.0625rem; }
-    
-    .link--arrow:hover {
-      outline: auto;
-      text-decoration: none; }
-  
-  .link--dark-gray {
-    color: #2d2d2d;
-    font-weight: 400; }
-    
-    .link--dark-gray:active {
-      color: #2d2d2d; }
+  .link--arrow:after {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'iconmoon';
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    speak: none;
+    text-transform: none;
+    color: #1381d7;
+    font-size: 1.5rem;
+    content: "";
+    margin-left: 16px;
+    vertical-align: bottom; }
   .bg--gradient-blue a, .bg--primary-color a, .bg--dark-gray a,
   .link--white {
     color: #fff; }
@@ -406,7 +394,7 @@ a,
   .list-wrap ul li:before,
   .list--ul li:before {
     content: "";
-    background: #2d2d2d;
+    background: #727272;
     width: 0.1875rem;
     height: 0.1875rem;
     top: 0.625rem;
@@ -417,11 +405,12 @@ a,
 
 .list-wrap ol li,
 .list--ol li {
+  padding-left: 1.25rem;
+  margin-bottom: 0.8125rem;
   list-style-type: decimal; }
 
 blockquote {
-  font-family: LibreBaskerville;
-  font-weight: 400;
+  font-family: 'LibreBaskerville', serif;
   font-style: italic;
   font-size: 1.5625rem;
   display: block; }
@@ -440,7 +429,6 @@ blockquote {
     text-transform: none;
     content: "";
     font-size: 1.125rem;
-    line-height: 1.4;
     color: #17d6f5;
     margin-bottom: 1.25rem; }
 
@@ -482,13 +470,17 @@ table {
 .btn {
   background: #1381d7;
   color: #fff;
+  display: inline-block;
   font-size: 1.125rem;
-  font-weight: 600;
-  padding: 1.125rem 2.375rem;
+  padding: 1.0625rem 2.375rem;
   text-align: center; }
   
-  .btn:hover,
   .btn:focus {
+    border: none;
+    outline: 3px solid #e4842d; }
+  
+  .btn:hover {
+    color: #fff;
     background: #0f65a8;
     text-decoration: none; }
   
@@ -509,26 +501,32 @@ table {
         display: inline-block;
         min-width: 15.3125rem; } }
   
-  .btn--gilroy {
-    font-family: 'Gilroy', sans-serif; }
-  
   .btn--font-large {
     font-size: 1.375rem;
-    padding: 0.75rem 2.375rem; }
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem; }
   
   .btn--small {
     padding: 0.5625rem 1.375rem; }
 
-.form-text, .form-textarea {
+.form-text,
+.form-textarea {
   padding: 0.5rem;
   width: 100%; }
-  .form-text:focus, .form-textarea:focus {
-    outline: 1px solid #2d2d2d; }
+  .form-text:focus,
+  .form-textarea:focus {
+    outline: 1px solid #2d2d2d;
+    border: 1px solid #2d2d2d; }
 
 .form-item {
   margin-bottom: 1.25rem; }
 
-.form-radios label, .form-checkboxes label {
+.form-checkbox,
+.form-radio {
+  accent-color: #1381d7; }
+
+.form-radios label,
+.form-checkboxes label {
   display: inline; }
 
 label {
@@ -539,38 +537,21 @@ legend {
   margin-bottom: 0.625rem; }
 
 .bg--dark-gray {
-  background: #2d2d2d;
-  color: #fff !important; }
+  background: #2d2d2d; }
 
 .bg--primary-color {
   background-color: #1381d7; }
-
-.bg--white {
-  background-color: #fff; }
 
 .bg--gradient-blue {
   background-image: linear-gradient(to right, #1381d7, #17d6f5); }
 
 .bg--gradient-blue, .bg--primary-color, .bg--dark-gray {
   color: #fff; }
+  .bg--gradient-blue .link--arrow:after, .bg--primary-color .link--arrow:after, .bg--dark-gray .link--arrow:after {
+    color: #fff; }
 
-.font--large {
-  font-size: 1.25rem; }
-  @media (min-width: 48rem) {
-    .font--large {
-      font-size: 1.375rem; } }
-
-.font--medium {
-  font-size: 1.1875rem; }
-  @media (min-width: 48rem) {
-    .font--medium {
-      font-size: 1.3125rem; } }
-
-.font--small {
-  font-size: 0.9375rem; }
-  @media (min-width: 48rem) {
-    .font--small {
-      font-size: 1.25rem; } }
+.font--gilroy {
+  font-family: 'Gilroy', sans-serif; }
 
 .text--bold {
   font-weight: 700; }
@@ -592,9 +573,6 @@ legend {
 
 .text--white {
   color: #fff; }
-
-.text--black {
-  color: #000; }
 
 @viewport {
   zoom: 1;
