@@ -78,7 +78,7 @@
           "pattern": "base-colors-item",
           "with": {
             "item": {
-              "name": "$light -gray",
+              "name": "$light-gray",
               "id": "#f6f6f6"
             }
           },
