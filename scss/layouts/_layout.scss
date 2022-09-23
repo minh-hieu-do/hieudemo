@@ -30,8 +30,6 @@ body {
     @include show-breakpoints;
   }
 
-  font-size: 16px;
-
   @include susy-media(tablet) {
     font-size: rem(18px);
   }

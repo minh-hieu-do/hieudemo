@@ -5,6 +5,7 @@
 $black: #000;
 $dark-gray: #2d2d2d;
 $gray: #727272;
+$light-gray: #f6f6f6;
 $blue: #1381d7;
 $white: #fff;
 $silver: #ccc;
@@ -15,3 +16,9 @@ $orange: #e4842d;
 
 $primary-color: $blue;
 $text-color: $gray;
+
+$link-color: $primary-color;
+$link-hover-color: darken($primary-color, 15%);
+
+$btn-color: $primary-color;
+$btn-hover-color: darken($primary-color, 10%);

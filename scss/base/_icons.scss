@@ -35,3 +35,27 @@
     content: $icon-read-more;
   }
 }
+
+.icon-search2 {
+  &:before {
+    content: $icon-search2;
+  }
+}
+
+.icon-dpx-search {
+  &:before {
+    content: $icon-dpx-search;
+  }
+}
+
+.icon-caret-down {
+  &:before {
+    content: $icon-caret-down;
+  }
+}
+
+.icon-triangle-down {
+  &:before {
+    content: $icon-triangle-down;
+  }
+}

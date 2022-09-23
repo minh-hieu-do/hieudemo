@@ -81,27 +81,6 @@
   &:nth-child(1) {
     margin-top: 0;
   }
-
-  @include susy-media(desktopSuperwide) {
-    margin-left: gutter($susy-desktop-superwide);
-    width: span(4 of $susy-desktop-superwide);
-
-    &:nth-child(2n + 1) {
-      margin-left: gutter($susy-desktop-superwide);
-    }
-
-    &:nth-child(3n + 1) {
-      margin-left: 0;
-    }
-
-    &:nth-child(3) {
-      margin-top: 0;
-    }
-  }
-  
-  &:nth-child(1) {
-    margin-top: 0;
-  }
 }
 
 .block-example__grid2 {

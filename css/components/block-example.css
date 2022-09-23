@@ -58,18 +58,6 @@
         margin-top: 0; } }
   .block-example__item:nth-child(1) {
     margin-top: 0; }
-  @media (min-width: 90rem) {
-    .block-example__item {
-      margin-left: 2.72374%;
-      width: 31.51751%; }
-      .block-example__item:nth-child(2n + 1) {
-        margin-left: 2.72374%; }
-      .block-example__item:nth-child(3n + 1) {
-        margin-left: 0; }
-      .block-example__item:nth-child(3) {
-        margin-top: 0; } }
-  .block-example__item:nth-child(1) {
-    margin-top: 0; }
 
 .block-example__grid2 {
   display: -webkit-flex;

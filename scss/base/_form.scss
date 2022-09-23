@@ -1,10 +1,11 @@
 %form-text {
   padding: rem(8px);
   width: 100%;
+  border: 1px solid $dark-gray;
+  outline: 0;
 
   &:focus {
-    outline: 1px solid $dark-gray;
-    border: 1px solid $dark-gray;
+    border: 1px solid $primary-color;
   }
 }
 

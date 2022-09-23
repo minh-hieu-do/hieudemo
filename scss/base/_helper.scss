@@ -10,23 +10,6 @@
   &--gradient-blue {
     background-image: linear-gradient( to right, $blue, $light-blue);
   }
-
-  &--gradient-blue,
-  &--primary-color, 
-  &--dark-gray {
-    @extend %heading-white;
-    color: $white;
-
-    a {
-      @extend %link--white;
-    }
-    
-    .link--arrow {
-      &:after {
-        color: $white;
-      }
-    }
-  }
 }
 
 .font {
@@ -62,6 +45,16 @@
   
   &--white {
     color: $white;
+
+    @extend %heading-white;
+
+    a {
+      @extend %link--white;
+    }
+  }
+
+  &--small {
+    font-size: rem(13px);
   }
 }
 

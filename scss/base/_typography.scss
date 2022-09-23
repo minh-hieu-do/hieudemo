@@ -15,6 +15,7 @@ h6 {
 
 h1 {
   font-size: rem(50px);
+
   @include susy-media (tablet) {
     font-size: rem(54px);
   }
@@ -22,6 +23,7 @@ h1 {
 
 h2 {
   font-size: rem(32px);
+
   @include susy-media (tablet) {
     font-size: rem(40px);
   }
@@ -29,6 +31,7 @@ h2 {
 
 h3 {
   font-size: rem(28px);
+
   @include susy-media (tablet) {
     font-size: rem(36px);
   }
@@ -36,20 +39,23 @@ h3 {
 
 h4 {
   font-size: rem(25px);
+
   @include susy-media (tablet) {
     font-size: rem(32px);
   }
 }
 
 h5 {
-  font-size: rem(22px);
+  font-size: rem(20px);
+
   @include susy-media (tablet) {
     font-size: rem(28px);
   }
 }
 
 h6 {
-  font-size: rem(19px);
+  font-size: rem(18px);
+
   @include susy-media (tablet) {
     font-size: rem(24px);
   }
@@ -66,14 +72,23 @@ h6 {
 .link {
   text-decoration: none;
   color: $primary-color;
-  font-size: rem(18px);
   
   &:focus {
-    outline: 3px solid orange;
+    outline: 3px solid $primary-color;
   }
 
   &:hover {
-    color: darken($primary-color, 15%);
+    color: $link-hover-color;
+  }
+
+  &--caret-down {
+    &:after {
+      @include iconmoon;
+      color: $primary-color;
+      font-size: rem(12px);
+      content: $icon-caret-down;
+      margin-left: rem(3px);
+    }
   }
 
   &--arrow {
@@ -83,12 +98,22 @@ h6 {
       font-size: rem(24px);
       content: $icon-read-more;
       margin-left: 16px;
-      vertical-align: bottom;
+      vertical-align: bottom;    
+    }
+
+    &--white {
+        &:after {
+        color: $white;
+      }
     }
   }
 
   &--white {
     color: $white;
+  }
+
+  &--dark-gray {
+    color: $dark-gray;
   }
 }
 
@@ -131,6 +156,16 @@ a {
 
 }
 
+%list-menu {
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: stretch;
+  }
+}
+
 .list-wrap {
   ul {
     @extend %list--ul;
@@ -140,6 +175,7 @@ a {
     @extend %list--ol;
   }
 }
+
 
 //Blockquote.
 blockquote {
@@ -210,3 +246,5 @@ table {
     font-weight: 400;
   }
 }
+
+
