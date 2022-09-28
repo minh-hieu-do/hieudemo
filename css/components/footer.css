@@ -1,0 +1,36 @@
+.footer__above-wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto; }
+
+.footer__logo-wrap {
+  min-width: rem(158px); }
+
+.footer__logo {
+  display: block; }
+
+.footer__icon ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .footer__icon ul li {
+    margin-right: rem(20px); }
+
+.footer__list-wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto; }
+
+.footer__list {
+  min-width: rem(158px);
+  margin-right: rem(100px); }
+  .footer__list:nth-last-child(1) {
+    margin-right: 0; }
+
+.footer__list-item__item
+.footer__below-wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }

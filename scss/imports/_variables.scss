@@ -13,7 +13,7 @@ $container-margin: 10px;
 $container-desktop-margin: 66px;
 $container-desktop: 965px;
 $container-desktop-wide: 1176px;
-$container-desktop-wide-large: 1382px;
+$container-desktop-superwide: 1387px;
 $column-mobile: 4;
 $column-tablet: 8;
 $column-desktop: 12;
@@ -94,23 +94,7 @@ $susy-desktop-wide: (
   ),
 );
 
-// header - footer container
-
 $susy-desktop-large: (
-  container-position: rem($container-margin * 3),
-  container: auto,
-  columns: $column-desktop,
-  gutters: 40px / 62px,
-  column-width: false,
-  debug: (
-    image: $show-image,
-    color: rgba($silver, .25),
-    output: background,
-    toggle: top right,
-  ),
-);
-
-$susy-desktop-wide-large: (
   container-position: rem($container-margin * 3),
   container: auto,
   columns: $column-desktop,
@@ -128,7 +112,7 @@ $susy-desktop-superwide: (
   columns: $column-desktop,
   gutters: 28px / 60px,
   container-position: center,
-  container: $container-desktop-wide-large,
+  container: $container-desktop-superwide,
   // container: auto,
   debug: (
     image: $show-image,
@@ -165,11 +149,12 @@ $susy-media: (
   // min-width: 768px
   tablet: rem($tablet),
 
-  // min-width: 1999px
+  // min-width: 1024px
   desktop: rem($desktop),
 
   // min-width: 1280px
   desktopWide: rem($desktop-wide),
 
+  // min-width: 1440px
   desktopSuperwide: rem($desktop-superwide),
 );

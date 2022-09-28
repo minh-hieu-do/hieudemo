@@ -4,14 +4,18 @@
 }
 
 .header__helper {
-  @extend %list-menu;
   display: flex;
 	justify-content: flex-end;
   background-color: $light-gray;
   height: 40px;
 
   ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
     align-items: center;
+    
     li {
       display: block;
       margin-right: rem(31px);
@@ -30,14 +34,18 @@
 
 .header__logo {
   display: block;
-  padding-right: 148px;
+  padding-right: rem(148px);
 }
 
 .header__menu {
-  @extend %list-menu;
   margin: auto;
 
   ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: stretch;
     justify-content: center;
 
     li {

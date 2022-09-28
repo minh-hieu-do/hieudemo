@@ -18,10 +18,6 @@
       @include container($susy-desktop-large);
     }
 
-    @include susy-media(desktopWide) {
-      @include container($susy-desktop-wide-large);
-    }
-
     @include susy-media(desktopSuperwide) {
       @include container($susy-desktop-superwide);
     }

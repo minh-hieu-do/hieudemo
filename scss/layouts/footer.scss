@@ -1,0 +1,124 @@
+@import '../../vendor/susy/susy';
+@import '../imports/functions';
+@import '../imports/colors';
+@import '../imports/variables';
+@import '../imports/mixins';
+@import '../imports/icons-variables';
+
+.footer__wrap {
+  margin-top: rem(40px);
+}
+
+.footer__top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.footer__item {
+  @include susy-media(desktop) {
+    margin-left: gutter($susy-desktop);
+    width: span(2 of $susy-desktop);
+
+    &:nth-last-child(2n + 1) {
+      margin-left: gutter($susy-desktop);
+    }
+
+    &:nth-child(6n + 1) {
+      margin-left: 0;
+    }
+  }
+
+  @include susy-media(desktopSuperwide) {
+    margin-left: gutter($susy-desktop-superwide);
+    width: span(2 of $susy-desktop-superwide);
+
+    &:nth-last-child(2n + 1) {
+      margin-left: gutter($susy-desktop-superwide);
+    }
+
+    &:nth-child(6n + 1) {
+      margin-left: 0;
+    }
+  }
+}
+
+.menu-item {
+  margin-bottom: rem(15px);
+
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+}
+
+.footer__title {
+  margin-bottom: rem(15px);
+}
+
+.footer__logo-wrap {
+
+}
+
+.footer__icon{
+  margin-left:rem(35px);
+  
+  ul {
+    display: flex;
+    
+    li {
+      margin-right: rem(35px);
+    }
+  }
+}
+
+.footer__title,
+.menu,
+.footer__logo {
+  display: none;
+
+  @include susy-media(desktop) {
+    display: block;
+  }
+}
+
+.footer__bottom {
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+  margin: rem(22px) 0;
+
+  @include susy-media(desktop) {
+    margin-top: rem(72px);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+
+.footer__helper{
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: stretch;
+
+    li {
+      margin-right: rem(11px);
+    }
+  }
+}
+
+.footer__website-version{
+  margin-top: rem(30px);
+
+  @include susy-media(desktop) {
+    margin-top: rem(6px);
+  }
+}
