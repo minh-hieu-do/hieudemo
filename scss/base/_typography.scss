@@ -11,13 +11,14 @@ h6 {
   @include Gilroy;
   font-weight: 500;
   color: $dark-gray;
+  line-height: 1.3;
 }
 
 h1 {
   font-size: rem(50px);
 
   @include susy-media (tablet) {
-    font-size: rem(54px);
+    font-size: rem(56px);
   }
 }
 
@@ -71,10 +72,11 @@ h6 {
  %link,
 .link {
   text-decoration: none;
-  color: $primary-color;
+  color: $link-color;
+  cursor: pointer;
   
   &:focus {
-    outline: 3px solid $primary-color;
+    outline: 3px solid $link-color;
   }
 
   &:hover {
@@ -84,7 +86,7 @@ h6 {
   &--caret-down {
     &:after {
       @include iconmoon;
-      color: $primary-color;
+      color: $link-color;
       font-size: rem(12px);
       content: $icon-caret-down;
       margin-left: rem(3px);
@@ -94,7 +96,7 @@ h6 {
   &--arrow {
     &:after {
       @include iconmoon;
-      color: $primary-color;
+      color: $link-color;
       font-size: rem(24px);
       content: $icon-read-more;
       margin-left: 16px;
@@ -105,6 +107,12 @@ h6 {
         &:after {
         color: $white;
       }
+    }
+  }
+
+  &--text {
+    a {
+      color: $text-color;
     }
   }
 
@@ -121,6 +129,11 @@ a {
   @extend %link;
 }
 
+.link-wrap {
+  &--text {
+    @extend %link--text;
+  }
+}
 
 //List.
 %list,

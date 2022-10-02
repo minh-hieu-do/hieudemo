@@ -7,20 +7,22 @@ $tablet: 768px;
 $desktop: 1024px;
 $desktop-wide: 1280px;
 $desktop-superwide: 1440px;
+$desktop-superwide-large: 1600px;
 
 // Grid variables
 $container-margin: 10px;
 $container-desktop-margin: 66px;
-$container-desktop: 965px;
 $container-desktop-wide: 1176px;
 $container-desktop-superwide: 1387px;
+$container-desktop-superwide-large: 1444px;
+
 $column-mobile: 4;
 $column-tablet: 8;
 $column-desktop: 12;
 
 //Font variables
 $base-font-size: 16px;
-$base-line-height: 1.4;
+$base-line-height: 1.5;
 
 // Add global paths
 $image-path: '../images/';
@@ -122,6 +124,20 @@ $susy-desktop-superwide: (
   ),
 );
 
+$susy-desktop-superwide-large: (
+  columns: $column-desktop,
+  gutters: 28px / 60px,
+  container-position: center,
+  container: $container-desktop-superwide-large,
+  // container: auto,
+  debug: (
+    image: $show-image,
+    color: rgba($silver, .25),
+    output: background,
+    toggle: top right,
+  ),
+);
+
 // Pick specific breakpoint.
 $susy-media: (
   // max-width: 769px
@@ -157,4 +173,7 @@ $susy-media: (
 
   // min-width: 1440px
   desktopSuperwide: rem($desktop-superwide),
+
+  //min-width: 1600px;
+  desktopSuperwidelarge: rem($desktop-superwide-large),
 );

@@ -57,6 +57,14 @@
     }
   }
 
+  &--dark-gray {
+    color: $dark-gray;
+  }
+
+  &--large {
+    font-size: rem(24px);
+  }
+
   &--small {
     font-size: rem(14px);
   }
@@ -66,3 +74,24 @@
   }
 }
 
+.hidden {
+  display: none;
+
+  &--mobile {
+    @include susy-media(mobileOnly) {
+      display: none;
+    }
+  }
+  
+  &--tablet {
+    @include susy-media(tabletOnly) {
+      display: none;
+    }
+  }
+  
+  &--desktop {
+    @include susy-media(desktop) {
+      display: none;
+    }
+  }
+}

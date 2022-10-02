@@ -1,0 +1,115 @@
+{
+  "footerTop": {
+    "one": {
+      "include()": {
+        "pattern": "templates-content-layout",
+        "with": {
+          "contentLayout": {
+            "class": "",
+            "items": [
+              {
+                "include()": {
+                  "pattern": "base-markup",
+                  "with": {
+                    "markup": {
+                      "html": "<a href='' class='hidden--mobile hidden--tablet'><img src='../../images/logo.svg' alt='logo'></img></a>"
+                    }
+                  },
+                  "only": true
+                }
+              },
+              {
+                "include()": {
+                  "pattern": "base-block-social",
+                  "with": {
+                    "blockSocial": {
+                      "label": "",
+                      "content": "<a href='#' class='icon-facebook'></a><a href='#' class='icon-linkedin'></a><a href='#' class='icon-twitter'></a>"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            ]
+          }
+        },
+        "only": true
+      }
+    },
+    "two": {
+      "include()": {
+        "pattern": "base-block-menu",
+        "with": {
+          "blockMenu": {
+            "heading": "PRODUCT",
+            "content": "<ul class='footer-top__list'> <li class='footer-top__list-item'> <a href='' class= ''>Solitions Overview</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Delphix for Dev Ops</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Data Privacy and Security</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Hybrid Cloud Enablement</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Solutions Overview</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Delphix for Dev Ops</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Data Privacy and Security</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Hybrid Cloud Enablement</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Test Data Management</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Telecom</a> </li> </ul>"
+          }
+        },
+        "only": true
+      }
+    },
+    "three": {
+      "include()": {
+        "pattern": "base-block-menu",
+        "with": {
+          "blockMenu": {
+            "heading": "SOLUTIONS",
+            "content": "<ul class='footer-top__list'> <li class='footer-top__list-item'> <a href='' class= ''>Solitions Overview</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Delphix for Dev Ops</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Data Privacy and Security</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Hybrid Cloud Enablement</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Solutions Overview</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Delphix for Dev Ops</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Data Privacy and Security</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Hybrid Cloud Enablement</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Test Data Management</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Telecom</a> </li> </ul>"
+          }
+        },
+        "only": true
+      }
+    },
+    "four": {
+      "include()": {
+        "pattern": "base-block-menu",
+        "with": {
+          "blockMenu": {
+            "heading": "COMPANY",
+            "content": "<ul class='footer-top__list'> <li class='footer-top__list-item'> <a href='' class= ''>All</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Platform</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Delphix for Dev ops</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Data Privacy and Security</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Hybrid Cloud Enablement</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Test Data Management</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Company and News</a> </li> </ul>"
+          }
+        },
+        "only": true
+      }
+    },
+    "five": {
+      "include()": {
+        "pattern": "base-block-menu",
+        "with": {
+          "blockMenu": {
+            "heading": "RESOURCES",
+            "content": "<ul class='footer-top__list'> <li class='footer-top__list-item'> <a href='' class= ''>Customers</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Partners</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>About Delphix</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Careers</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Support</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Community</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Knowledge</a> </li> <li class='footer-top__list-item'> <a href='' class= ''>Documentation</a> </li> </ul>"
+          }
+        },
+        "only": true
+      }
+    },
+    "six": {
+      "include()": {
+        "pattern": "base-block-menu",
+        "with": {
+          "blockMenu": {
+            "heading": "SUPPORT",
+            "content": "<ul class='menu'><li class='menu-item'><a href='#'>Community</a></li><li class='menu-item'><a href='#'>Support</a></li><li class='menu-item'><a href='#'>Product Documentation</a></li><li class='menu-item'><a href='#'>Platform</a></li><li class='menu-item'><a href='#'>Knowledge Base</a></li></ul>"
+          }
+        },
+        "only": true
+      }
+    }
+  },
+  "footerBottom": {
+    "left": {
+      "include()": {
+        "pattern": "base-block-menu",
+        "with": {
+          "blockMenu": {
+            "heading": "",
+            "content": "<ul class='footer-bottom__list'><li class='footer-bottom__list-item'><a href='' class= ''>Privacy Policy</a> </li><li class='footer-bottom__list-item'><a href='' class= ''>Term of Use</a> </li> <li class='footer-bottom__list-item'><a href='' class= ''>Legal</a> </li> <li class='footer-bottom__list-item'><a href='' class= ''>Sitemap</a> </li></ul>"
+          }
+        },
+        "only": true
+      }
+    },
+    "right": "<span>© 2017 Delphix</span>"
+  }
+}
