@@ -1,0 +1,108 @@
+.form-text,
+.form-textarea, .block-banner__form form .form-email {
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid #2d2d2d;
+  outline: 0; }
+  .form-text:focus,
+  .form-textarea:focus, .block-banner__form form .form-email:focus {
+    border: 1px solid #1381d7; }
+
+.form-item {
+  margin-bottom: 0.625rem; }
+
+.form-checkbox,
+.form-radio {
+  accent-color: #1381d7; }
+
+.form-radios label,
+.form-checkboxes label {
+  display: inline; }
+
+label {
+  display: block;
+  margin-bottom: 0.3125rem; }
+
+legend {
+  margin-bottom: 0.625rem; }
+
+.block-banner {
+  position: relative;
+  overflow: hidden; }
+  .block-banner__background {
+    position: absolute;
+    opacity: 0.2;
+    height: 100%;
+    width: 100%;
+    z-index: -1000; }
+    .block-banner__background img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+  .block-banner__wrap {
+    display: block; }
+  .block-banner__left {
+    margin-bottom: 2.625rem; }
+    @media (min-width: 64rem) {
+      .block-banner__left {
+        width: 48.31081%;
+        margin-right: 3.37838%;
+        float: left;
+        margin-bottom: 6.25rem; } }
+  @media (min-width: 64rem) {
+    .block-banner__right {
+      width: 31.08108%;
+      margin-right: 3.37838%; } }
+  @media (min-width: 64rem) {
+    .block-banner__right:nth-child(2n + 2) {
+      float: right;
+      margin-right: 0; } }
+  .block-banner__right .block-banner-slider__image {
+    padding-bottom: 3.125rem; }
+    .block-banner__right .block-banner-slider__image picture img {
+      width: 100%; }
+  .block-banner__right .block-banner-slider__image-small {
+    position: absolute;
+    bottom: 0.0625rem;
+    right: 5.8125rem; }
+  .block-banner__form {
+    margin-bottom: 2.1875rem; }
+    @media (min-width: 48rem) {
+      .block-banner__form {
+        margin-bottom: 1.3125rem; } }
+    .block-banner__form form .form-email {
+      font-size: 1.125rem;
+      padding: 1.125rem 0.875rem;
+      border: 0.0625rem solid #fff; }
+    .block-banner__form form .form-submit {
+      border: none;
+      width: 100%; }
+    @media (min-width: 48rem) {
+      .block-banner__form form {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        .block-banner__form form .form-submit {
+          padding: 1.1875rem 1.375rem; } }
+  .block-banner__title {
+    font-size: 1.9375rem;
+    margin-bottom: 1.3125rem; }
+    @media (min-width: 64rem) {
+      .block-banner__title {
+        font-size: 3.5rem;
+        margin-bottom: 2.125rem; } }
+  .block-banner__description {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 1.8125rem; }
+    @media (min-width: 48rem) {
+      .block-banner__description {
+        font-size: 1.4375rem;
+        margin-bottom: 2.5rem; } }
+  .block-banner__link {
+    font-size: 1rem; }
+    @media (min-width: 64rem) {
+      .block-banner__link .link--arrow:after {
+        margin-left: 0.5rem; } }
+  .block-banner .slick-active {
+    position: relative; }

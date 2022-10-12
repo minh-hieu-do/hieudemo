@@ -62,7 +62,7 @@
   }
 
   &--large {
-    font-size: rem(24px);
+    font-size: rem(23px);
   }
 
   &--small {
@@ -94,4 +94,16 @@
       display: none;
     }
   }
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.tag {
+  color: $primary-color;
+  border: rem(1px) solid $primary-color;
+  padding: rem(5px) rem(12px);
+  border-radius: rem(5px);
+  margin-right: rem(6px);
 }

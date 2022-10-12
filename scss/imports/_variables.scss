@@ -6,15 +6,14 @@ $mobile-landscape: 480px;
 $tablet: 768px;
 $desktop: 1024px;
 $desktop-wide: 1280px;
-$desktop-superwide: 1440px;
-$desktop-superwide-large: 1600px;
+$desktop-superwide: 1500px;
 
 // Grid variables
 $container-margin: 10px;
 $container-desktop-margin: 66px;
 $container-desktop-wide: 1176px;
-$container-desktop-superwide: 1387px;
-$container-desktop-superwide-large: 1444px;
+$container-desktop-superwide: 1380px;
+$container-desktop-superwide-large: 1440px;
 
 $column-mobile: 4;
 $column-tablet: 8;
@@ -28,7 +27,7 @@ $base-line-height: 1.5;
 $image-path: '../images/';
 
 // Susy grid.
-$debug: true; // Set true to show the grid.
+$debug: false; // Set true to show the grid.
 $show-image: 'hide';
 
 @if $debug == false {
@@ -59,7 +58,7 @@ $susy-tablet: (
   container-position: rem($container-margin * 2),
   container: auto,
   columns: $column-tablet,
-  gutters: 20px / 42px,
+  gutters: 30px / 42px,
   column-width: false,
   debug: (
     image: $show-image,
@@ -85,7 +84,7 @@ $susy-desktop: (
 
 $susy-desktop-wide: (
   columns: $column-desktop,
-  gutters: 28px / 60px,
+  gutters: 40px / 60px,
   container-position: center,
   container: $container-desktop-wide,
   debug: (
@@ -96,7 +95,7 @@ $susy-desktop-wide: (
   ),
 );
 
-$susy-desktop-large: (
+$susy-desktop--large: (
   container-position: rem($container-margin * 3),
   container: auto,
   columns: $column-desktop,
@@ -110,23 +109,9 @@ $susy-desktop-large: (
   ),
 );
 
-$susy-desktop-superwide: (
+$susy-desktop-superwide--large: (
   columns: $column-desktop,
-  gutters: 28px / 60px,
-  container-position: center,
-  container: $container-desktop-superwide,
-  // container: auto,
-  debug: (
-    image: $show-image,
-    color: rgba($silver, .25),
-    output: background,
-    toggle: top right,
-  ),
-);
-
-$susy-desktop-superwide-large: (
-  columns: $column-desktop,
-  gutters: 28px / 60px,
+  gutters: 40px / 60px,
   container-position: center,
   container: $container-desktop-superwide-large,
   // container: auto,
@@ -171,9 +156,6 @@ $susy-media: (
   // min-width: 1280px
   desktopWide: rem($desktop-wide),
 
-  // min-width: 1440px
+  // min-width: 1600px
   desktopSuperwide: rem($desktop-superwide),
-
-  //min-width: 1600px;
-  desktopSuperwidelarge: rem($desktop-superwide-large),
 );

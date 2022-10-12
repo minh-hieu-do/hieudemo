@@ -28,8 +28,8 @@
   @media (min-width: 48rem) {
     .block-example__item {
       margin-top: 40px;
-      margin-left: 4.20168%;
-      width: 47.89916%; }
+      margin-left: 5.49451%;
+      width: 47.25275%; }
       .block-example__item:nth-child(2n + 1) {
         margin-left: 0; }
       .block-example__item:nth-child(1), .block-example__item:nth-child(2) {
@@ -48,10 +48,10 @@
     margin-top: 0; }
   @media (min-width: 80rem) {
     .block-example__item {
-      margin-left: 2.72374%;
-      width: 31.51751%; }
+      margin-left: 3.44828%;
+      width: 31.03448%; }
       .block-example__item:nth-child(2n + 1) {
-        margin-left: 2.72374%; }
+        margin-left: 3.44828%; }
       .block-example__item:nth-child(3n + 1) {
         margin-left: 0; }
       .block-example__item:nth-child(3) {

@@ -15,15 +15,11 @@
 
   &--large {
     @include susy-media(desktop) {
-      @include container($susy-desktop-large);
+      @include container($susy-desktop--large);
     }
 
     @include susy-media(desktopSuperwide) {
-      @include container($susy-desktop-superwide);
-    }
-
-    @include susy-media(desktopSuperwidelarge) {
-      @include container($susy-desktop-superwide-large);
+      @include container($susy-desktop-superwide--large);
     }
   }
 }

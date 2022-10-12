@@ -6,10 +6,11 @@
   font-size: rem(18px);
   padding: rem(17px 38px);
   text-align: center;
+  cursor: pointer;
 
   &:focus {
     border: none;
-    outline: 3px solid $orange;
+    outline: 2px solid $orange;
   }
 
   &:hover {
