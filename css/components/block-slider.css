@@ -1,0 +1,160 @@
+.block-slider {
+  margin-bottom: 5.875rem; }
+  @media (min-width: 64rem) {
+    .block-slider {
+      overflow: hidden; } }
+  @media mobiletabletOnly {
+    .block-slider .container {
+      margin-left: 0;
+      margin-right: 0; } }
+
+@media screen and (min-width: 48rem) and (max-width: 63.9375rem) {
+  .block-slider__title,
+  .block-slider__group,
+  .block-slider__quotes {
+    padding-left: 20px;
+    padding-right: 20px; } }
+
+@media screen and (max-width: 47.9375rem) {
+  .block-slider__title,
+  .block-slider__group,
+  .block-slider__quotes {
+    padding-left: 10px;
+    padding-right: 10px; } }
+
+.block-slider__title {
+  letter-spacing: 0.0625rem;
+  padding-top: 2.5rem;
+  margin-bottom: 2.5rem; }
+  @media screen and (min-width: 48rem) and (max-width: 63.9375rem) {
+    .block-slider__title:after {
+      left: 20px; } }
+  @media screen and (max-width: 47.9375rem) {
+    .block-slider__title:after {
+      left: 10px; } }
+  @media (min-width: 48rem) {
+    .block-slider__title {
+      font-size: 2.125rem;
+      line-height: 1.35; } }
+  @media (min-width: 64rem) {
+    .block-slider__title {
+      padding-top: 5rem;
+      margin-bottom: 1.875rem; } }
+
+.block-slider__inner {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.block-slider__group {
+  -webkit-order: 3;
+      -ms-flex-order: 3;
+          order: 3;
+  overflow: hidden; }
+  @media (min-width: 64rem) {
+    .block-slider__group {
+      -webkit-order: unset;
+          -ms-flex-order: unset;
+              order: unset;
+      width: 60%;
+      padding-right: 2.5rem;
+      overflow: inherit; } }
+  @media desktopLarge {
+    .block-slider__group {
+      padding-right: 5rem; } }
+
+.block-slider__logos {
+  margin-left: -5px;
+  margin-right: -5px; }
+  .block-slider__logos .slick-list {
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 1.25rem; }
+    @media (min-width: 64rem) {
+      .block-slider__logos .slick-list {
+        overflow: inherit; } }
+  .block-slider__logos .slick-track {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+            align-content: stretch; }
+    @media (min-width: 64rem) {
+      .block-slider__logos .slick-track {
+        width: 100% !important; } }
+
+.block-slider-logo {
+  width: calc((100% - 20px) / 2);
+  padding: 1.25rem;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  height: auto;
+  cursor: pointer; }
+  @media (min-width: 48rem) {
+    .block-slider-logo {
+      width: calc((100% - 10px) / 4); } }
+  @media (min-width: 64rem) {
+    .block-slider-logo {
+      width: calc(100% / 3) !important;
+      margin-top: 2.5rem; } }
+  .block-slider-logo img {
+    margin: auto;
+    height: auto; }
+  .block-slider-logo.tab-active, .block-slider-logo.slick-current {
+    box-shadow: #ccc 0px 3px 8px;
+    background: #fff; }
+
+.block-slider__quotes {
+  width: 100%;
+  padding: 2.5rem 2.5rem 2.6875rem 0.625rem;
+  margin-bottom: 2rem;
+  position: relative; }
+  @media (min-width: 48rem) {
+    .block-slider__quotes {
+      padding: 2.5rem 1.25rem; } }
+  @media (min-width: 64rem) {
+    .block-slider__quotes {
+      width: 40%;
+      margin-bottom: 0;
+      padding: 6.5625rem 0rem 0rem 3.75rem; } }
+  @media desktopLarge {
+    .block-slider__quotes {
+      padding: 9.375rem 0rem 0rem 5rem; } }
+  @media (min-width: 64rem) {
+    .block-slider__quotes:after {
+      position: absolute;
+      content: "";
+      background-color: #000;
+      top: 0;
+      left: 0;
+      width: 50vw;
+      height: 100%; } }
+  .block-slider__quotes .slick-list {
+    z-index: 1; }
+
+.block-slider-quote__author {
+  font-size: 1.875rem;
+  letter-spacing: 0.0625rem;
+  margin-bottom: 0.9375rem; }
+  @media (min-width: 64rem) {
+    .block-slider-quote__author {
+      font-size: 2.3125rem;
+      font-weight: bold;
+      line-height: 1.25;
+      letter-spacing: 0;
+      margin-bottom: 2.5rem; } }
+
+.block-slider-quote__link {
+  margin-top: 1.5625rem;
+  font-size: 1.125rem; }

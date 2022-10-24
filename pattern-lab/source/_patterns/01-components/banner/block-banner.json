@@ -1,0 +1,173 @@
+{
+  "blockBanner": {
+    "bgImage": {
+      "include()": {
+        "pattern": "base-picture",
+        "with": {
+          "picture": {
+            "srcDesktopWide": "https://picsum.photos/500/500",
+            "srcDesktopSuperwide": "https://picsum.photos/500/500",
+            "srcDesktop": "https://picsum.photos/500/500",
+            "srcTablet": "https://picsum.photos/500/500",
+            "src": "https://picsum.photos/500/500",
+            "alt": "background-image"
+          },
+          "only": true
+        }
+      }
+    },
+    "title": "A New Approach to Enterprise Data Delivery & Access",
+    "description": "Personalized, secure, production-quality data that you can bookmark, version, refresh, restore, branch, and share. Ask us how.",
+    "form": "<form><div class='js-form-item form-item js-form-type-email form-item-email-address js-form-item-email-address'><input data-drupal-selector='edit-email-address' type='email' id='edit-email-address' name='email_address' value='' placeholder='Email Address' size='60' maxlength='254' class='form-email required' required='required' aria-required='true'></div><div data-drupal-selector='edit-actions' class='form-actions js-form-wrapper form-wrapper' id='edit-actions'><input class='btn js-form-submit form-submit' data-drupal-selector='edit-submit' type='submit' id='edit-submit' name='op' value='Speak to a Data Expert'></div></form>",
+    "link": {
+      "include()": {
+        "pattern": "base-link",
+        "with": {
+          "link": {
+            "target": "",
+            "class": "link--arrow link--dark-gray",
+            "href": "#",
+            "text": "Depart to Heakthcare & insurance"
+          }
+        },
+        "only": true
+      }
+    },
+    "sliders": {
+      "include()": {
+        "pattern": "components-block-banner-sliders",
+        "with": {
+          "items": [
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-banner-slider",
+                  "with": {
+                    "sliderItem": {
+                      "bigImage": {
+                        "include()": {
+                          "pattern": "base-picture",
+                          "with": {
+                            "picture": {
+                              "srcDesktopWide": "https://picsum.photos/500/500",
+                              "srcDesktopSuperwide": "https://picsum.photos/500/500",
+                              "srcDesktop": "https://picsum.photos/500/500",
+                              "srcTablet": "https://picsum.photos/1023/385",
+                              "src": "https://picsum.photos/500/500",
+                              "alt": "background-image"
+                            },
+                            "only": true
+                          }
+                        }
+                      },
+                      "smallImage": {
+                        "include()": {
+                          "pattern": "base-image",
+                          "with": {
+                            "image": {
+                              "src": "https://picsum.photos/120/120",
+                              "alt": "Image",
+                              "width": "120",
+                              "height": "120"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-banner-slider",
+                  "with": {
+                    "sliderItem": {
+                      "bigImage": {
+                        "include()": {
+                          "pattern": "base-picture",
+                          "with": {
+                            "picture": {
+                              "srcDesktopWide": "https://picsum.photos/500/500",
+                              "srcDesktopSuperwide": "https://picsum.photos/500/500",
+                              "srcDesktop": "https://picsum.photos/500/500",
+                              "srcTablet": "https://picsum.photos/1023/385",
+                              "src": "https://picsum.photos/500/500",
+                              "alt": "background-image"
+                            },
+                            "only": true
+                          }
+                        }
+                      },
+                      "smallImage": {
+                        "include()": {
+                          "pattern": "base-image",
+                          "with": {
+                            "image": {
+                              "src": "https://picsum.photos/120/120",
+                              "alt": "Image",
+                              "width": "120",
+                              "height": "120"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-banner-slider",
+                  "with": {
+                    "sliderItem": {
+                      "bigImage": {
+                        "include()": {
+                          "pattern": "base-picture",
+                          "with": {
+                            "picture": {
+                              "srcDesktopWide": "https://picsum.photos/500/500",
+                              "srcDesktopSuperwide": "https://picsum.photos/500/500",
+                              "srcDesktop": "https://picsum.photos/500/500",
+                              "srcTablet": "https://picsum.photos/1023/385",
+                              "src": "https://picsum.photos/500/500",
+                              "alt": "background-image"
+                            },
+                            "only": true
+                          }
+                        }
+                      },
+                      "smallImage": {
+                        "include()": {
+                          "pattern": "base-image",
+                          "with": {
+                            "image": {
+                              "src": "https://picsum.photos/120/120",
+                              "alt": "Image",
+                              "width": "120",
+                              "height": "120"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          ]
+        },
+        "only": true
+      }
+    }
+  }
+}

@@ -6,27 +6,28 @@ $mobile-landscape: 480px;
 $tablet: 768px;
 $desktop: 1024px;
 $desktop-wide: 1280px;
-$desktop-superwide: 1440px;
+$desktop-superwide: 1500px;
 
 // Grid variables
 $container-margin: 10px;
-$container-desktop-margin: 67px;
-// $container-desktop-width: 890px;
+$container-desktop-margin: 66px;
 $container-desktop-wide: 1176px;
-$container-desktop-superwide: 1373px;
+$container-desktop-superwide: 1380px;
+$container-desktop-superwide-large: 1440px;
+
 $column-mobile: 4;
 $column-tablet: 8;
 $column-desktop: 12;
 
 //Font variables
 $base-font-size: 16px;
-$base-line-height: 1.4;
+$base-line-height: 1.5;
 
 // Add global paths
 $image-path: '../images/';
 
 // Susy grid.
-$debug: true; // Set true to show the grid.
+$debug: false; // Set true to show the grid.
 $show-image: 'hide';
 
 @if $debug == false {
@@ -43,7 +44,7 @@ $susy: (
   container-position: rem($container-margin),
   container: auto,
   columns: $column-mobile,
-  gutters: 11px / 44px,
+  gutters: 5px / 40px,
   column-width: false,
   debug: (
     image: $show-image,
@@ -57,7 +58,7 @@ $susy-tablet: (
   container-position: rem($container-margin * 2),
   container: auto,
   columns: $column-tablet,
-  gutters: 8px / 40px,
+  gutters: 30px / 42px,
   column-width: false,
   debug: (
     image: $show-image,
@@ -71,12 +72,8 @@ $susy-desktop: (
   container-position: rem($container-desktop-margin),
   container: auto,
   columns: $column-desktop,
-  gutters: 36px / 62px,
+  gutters: 40px / 62px,
   column-width: false,
-  // columns: $column-desktop,
-  // gutters: 36px / 62px,
-  // container-position: center,
-  // container: $container-desktop-width,
   debug: (
     image: $show-image,
     color: rgba($silver, .25),
@@ -87,7 +84,7 @@ $susy-desktop: (
 
 $susy-desktop-wide: (
   columns: $column-desktop,
-  gutters: 36px / 62px,
+  gutters: 40px / 60px,
   container-position: center,
   container: $container-desktop-wide,
   debug: (
@@ -98,11 +95,26 @@ $susy-desktop-wide: (
   ),
 );
 
-$susy-desktop-superwide: (
+$susy-desktop--large: (
+  container-position: rem($container-margin * 3),
+  container: auto,
   columns: $column-desktop,
   gutters: 40px / 62px,
+  column-width: false,
+  debug: (
+    image: $show-image,
+    color: rgba($silver, .25),
+    output: background,
+    toggle: top right,
+  ),
+);
+
+$susy-desktop-superwide--large: (
+  columns: $column-desktop,
+  gutters: 40px / 60px,
   container-position: center,
-  container: $container-desktop-superwide,
+  container: $container-desktop-superwide-large,
+  // container: auto,
   debug: (
     image: $show-image,
     color: rgba($silver, .25),
@@ -138,11 +150,12 @@ $susy-media: (
   // min-width: 768px
   tablet: rem($tablet),
 
-  // min-width: 1999px
+  // min-width: 1024px
   desktop: rem($desktop),
 
   // min-width: 1280px
   desktopWide: rem($desktop-wide),
 
+  // min-width: 1600px
   desktopSuperwide: rem($desktop-superwide),
 );

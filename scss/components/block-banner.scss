@@ -1,0 +1,141 @@
+// Create a separate component, we need to require some variables and mixins.
+// Required imports
+@import '../../vendor/susy/susy';
+@import '../imports/functions';
+@import '../imports/colors';
+@import '../imports/variables';
+@import '../imports/mixins';
+@import '../imports/icons-variables';
+@import '../base/form';
+
+.block-banner {
+  position: relative;
+  overflow: hidden;
+
+  &__background {
+    position: absolute;
+    opacity: 0.2;
+    height: 100%;
+    width: 100%;
+    z-index: -1000;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__wrap {
+    display: block;
+    padding: rem(100px 0 100px 0);
+  } 
+
+  &__left {
+    
+    @include susy-media(desktop) {
+      width: span(6 of $susy-desktop);
+      float: left;
+    }
+  }
+
+  &__right {
+    @include susy-media(desktop) {
+      width: span(4 of $susy-desktop);
+      margin-right: gutter($susy-desktop);
+    }
+
+    &:nth-child(2n + 2) {
+      @include susy-media(desktop) {
+        float: right;
+        margin-right: 0;
+      }
+    }
+
+    .block-banner-slider__image {
+      padding-bottom: rem(42px);
+
+      picture {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .block-banner-slider__image-small {
+      position: absolute;
+      bottom: rem(2px);
+      right: rem(93px);
+    }
+  }
+
+  &__form {
+    margin-bottom: rem(35px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(21px);
+    } 
+
+    form {
+      .form-email {
+        @extend %form-text;
+        font-size: rem(18px);
+        padding: rem(18px) rem(14px);
+        border: rem(1px) solid $white;
+      }
+
+      .form-submit {
+        border: none;
+        width: 100%;
+      }
+
+      @include susy-media(tablet) {
+        display: flex;
+  
+        .form-submit {
+          padding: rem(19px) rem(22px);
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-size: rem(31px);
+    margin-bottom: rem(21px);
+    
+    @include susy-media(desktop) {
+      font-size: rem(56px);
+      margin-bottom: rem(34px);
+    }
+  }
+
+  &__description {
+    font-size: rem(18px);
+    line-height: 1.6;
+    margin-bottom: rem(29px);
+
+    @include susy-media(tablet) {
+      font-size: rem(23px);
+      margin-bottom: rem(40px);
+    }
+  }
+
+  &__link {
+    font-size: rem(16px);
+    margin-bottom: rem(43px);
+    
+    @include susy-media(desktop) {
+      .link--arrow {
+        &:after {
+          margin-left: rem(8px);
+        }
+      }
+    }
+  }
+
+  .slick-active {
+    position: relative;
+  }
+}
+
+

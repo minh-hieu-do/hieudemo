@@ -1,4 +1,10 @@
 <picture>
+  {% if picture.srcDesktopWide %}
+    <source media="{{ desktopWide }}" srcset="{{ picture.srcDesktopWide }}">
+  {% endif %}
+  {% if picture.srcDesktopSuperwide %}
+    <source media="{{ desktopSuperwide }}" srcset="{{ picture.srcDesktopSuperwide }}">
+  {% endif %}
   {% if picture.srcDesktop %}
     <source media="{{ desktop }}" srcset="{{ picture.srcDesktop }}">
   {% endif %}

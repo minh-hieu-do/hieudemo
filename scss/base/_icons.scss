@@ -29,3 +29,51 @@
     content: $icon-left-arrow;
   }
 }
+
+.icon-read-more {
+  &:after {
+    content: $icon-read-more;
+  }
+}
+
+.icon-search2 {
+  &:before {
+    content: $icon-search2;
+  }
+}
+
+.icon-dpx-search {
+  &:before {
+    content: $icon-dpx-search;
+  }
+}
+
+.icon-caret-down {
+  &:before {
+    content: $icon-caret-down;
+  }
+}
+
+.icon-triangle-down {
+  &:before {
+    content: $icon-triangle-down;
+  }
+}
+
+.icon-linkedin {
+  &:before {
+    content: $icon-linkedin;
+  }
+}
+
+.icon-facebook {
+  &:before {
+    content: $icon-facebook;
+  }
+}
+
+.icon-twitter {
+  &:before {
+    content: $icon-twitter;
+  }
+}

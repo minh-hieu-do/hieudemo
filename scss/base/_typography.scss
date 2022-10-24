@@ -11,48 +11,56 @@ h6 {
   @include Gilroy;
   font-weight: 500;
   color: $dark-gray;
+  line-height: 1.3;
 }
 
 h1 {
-  @include susy-media (tablet) {
-    font-size: rem(54px);
-  }
   font-size: rem(50px);
+
+  @include susy-media (tablet) {
+    font-size: rem(56px);
+  }
 }
 
 h2 {
+  font-size: rem(32px);
+
   @include susy-media (tablet) {
     font-size: rem(40px);
   }
-  font-size: rem(32px);
 }
 
 h3 {
+  font-size: rem(28px);
+
   @include susy-media (tablet) {
-    font-size: rem(26px);
+    font-size: rem(36px);
   }
-  font-size: rem(24px);
 }
 
 h4 {
+  font-size: rem(25px);
+
   @include susy-media (tablet) {
-    font-size: rem(25px);
+    font-size: rem(32px);
   }
-  font-size: rem(23px);
 }
 
 h5 {
+  font-size: rem(20px);
+
+  @include susy-media (tablet) {
+    font-size: rem(28px);
+  }
+}
+
+.h6,
+h6 {
+  font-size: rem(18px);
+
   @include susy-media (tablet) {
     font-size: rem(24px);
   }
-  font-size: rem(22px);
-}
-
-h6 {
-  @include susy-media (tablet) {
-    font-size: rem(23px);
-  }
-  font-size: rem(21px);
 }
 
 %heading-white {
@@ -65,47 +73,56 @@ h6 {
  %link,
 .link {
   text-decoration: none;
-
-  &,
-  &:active,
-  &:visited {
-    color: $primary-color;
+  color: $link-color;
+  cursor: pointer;
+  
+  &:focus {
+    outline: 3px solid $link-color;
   }
 
-  &:hover,
-  &:focus {
-    outline: auto;
+  &:hover {
+    color: $link-hover-color;
+  }
+
+  &--caret-down {
+    &:after {
+      @include iconmoon;
+      color: $link-color;
+      font-size: rem(12px);
+      content: $icon-caret-down;
+      margin-left: rem(3px);
+    }
   }
 
   &--arrow {
-    position: relative;
-    padding-right: rem(30px);
-
     &:after {
       @include iconmoon;
-      content: $icon-right-arrow;
-      position: absolute;
-      right: 0;
-      top: rem(1px);
+      color: $link-color;
+      font-size: rem(24px);
+      content: $icon-read-more;
+      margin-left: 16px;
+      vertical-align: bottom;    
     }
 
-    &:hover {
-      outline: auto;
-      text-decoration: none;
+    &--white {
+        &:after {
+        color: $white;
+      }
     }
   }
 
-  &--dark-gray {
-    color: $dark-gray;
-    font-weight: 400;
-
-    &:active {
-      color: $dark-gray;
+  &--text {
+    a {
+      color: $text-color;
     }
   }
 
   &--white {
     color: $white;
+  }
+
+  &--dark-gray {
+    color: $dark-gray;
   }
 }
 
@@ -113,6 +130,11 @@ a {
   @extend %link;
 }
 
+.link-wrap {
+  &--text {
+    @extend %link--text;
+  }
+}
 
 //List.
 %list,
@@ -126,7 +148,7 @@ a {
 
       &:before {
         content: "";
-        background: $dark-gray;
+        background: $gray;
         width: rem(3px);
         height: rem(3px);
         top: rem(10px);
@@ -140,6 +162,8 @@ a {
 
   &--ol {
     li {
+      padding-left: rem(20px);
+      margin-bottom: rem(13px);
       list-style-type: decimal;
     }
   }
@@ -156,10 +180,10 @@ a {
   }
 }
 
+
 //Blockquote.
 blockquote {
-  font-family: LibreBaskerville;
-  font-weight: 400;
+  @include LibreBaskerville;
   font-style: italic;
   font-size: rem(25px);
   display: block;
@@ -172,7 +196,6 @@ blockquote {
     @include iconmoon;
     content: $icon-quote;
     font-size: rem(18px);
-    line-height: $base-line-height;
     color: $light-blue;
     margin-bottom: rem(20px);
   }

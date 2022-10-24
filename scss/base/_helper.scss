@@ -1,53 +1,20 @@
 .bg {
   &--dark-gray {
     background: $dark-gray;
-    color: $white !important;
   }
 
   &--primary-color {
     background-color: $primary-color;
   }
 
-  &--white {
-    background-color: $white;
-  }
-
   &--gradient-blue {
     background-image: linear-gradient( to right, $blue, $light-blue);
-  }
-
-  &--gradient-blue,
-  &--primary-color,
-  &--dark-gray {
-    @extend %heading-white;
-    color: $white;
-
-    a {
-      @extend %link--white;
-    }
   }
 }
 
 .font {
-  &--large {
-    @include susy-media(tablet) {
-      font-size: rem(22x);
-    }
-    font-size: rem(20px);
-  }
-  
-  &--medium {
-    @include susy-media(tablet) {
-      font-size: rem(21px);
-    }
-    font-size: rem(19px);
-  }
-  
-  &--small {
-    @include susy-media(tablet) {
-      font-size: rem(20px);
-    }
-    font-size: rem(15px) ;
+  &--gilroy {
+    @include Gilroy;
   }
 }
 
@@ -76,12 +43,71 @@
     font-style: italic;
   }
   
+  &--gray {
+    color: $text-color;
+  }
+
   &--white {
     color: $white;
+
+    @extend %heading-white;
+
+    a {
+      @extend %link--white;
+    }
   }
-  
-  &--black {
-    color: $black;
+
+  &--dark-gray {
+    color: $dark-gray;
+  }
+
+  &--large {
+    font-size: rem(23px);
+  }
+
+  &--small {
+    font-size: rem(14px);
+  }
+
+  &--very-small {
+    font-size: rem(12px);
   }
 }
 
+.hidden {
+  display: none;
+
+  &--mobile {
+    @include susy-media(mobileOnly) {
+      display: none;
+    }
+  }
+  
+  &--tablet {
+    @include susy-media(tabletOnly) {
+      display: none;
+    }
+  }
+  
+  &--desktop {
+    @include susy-media(desktop) {
+      display: none;
+    }
+  }
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.tag {
+  color: $primary-color;
+  border: rem(1px) solid $primary-color;
+  padding: rem(5px) rem(12px);
+  border-radius: rem(5px);
+  margin-right: rem(6px);
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+}

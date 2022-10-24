@@ -1,15 +1,21 @@
 %btn,
 .btn {
-  background: $primary-color;
+  background: $btn-color;
   color: $white;
+  display: inline-block;
   font-size: rem(18px);
-  font-weight: 600;
-  padding: rem(18px 38px);
+  padding: rem(17px 38px);
   text-align: center;
+  cursor: pointer;
 
-  &:hover,
   &:focus {
-    background: darken($primary-color, 10%);
+    border: none;
+    outline: 2px solid $orange;
+  }
+
+  &:hover {
+    color: $white;
+    background: $btn-hover-color;
     text-decoration: none;
   }
 
@@ -19,29 +25,25 @@
   }
 
   &--radius {
-    border-radius: rem(50px);
+    border-radius: rem(1000px);
   }
 
   &--long {
+    display: block;
+
     @include susy-media(tablet) {
       display: inline-block;
       min-width: rem(245px);
-    }
-    padding-top: rem(14px);
-    padding-bottom: rem(14px);
-    display: block;
-  }
-
-  &--gilroy {
-    @include Gilroy;
+    } 
   }
 
   &--font-large {
     font-size: rem(22px);
-    padding: rem(12px 38px);
+    padding-top: rem(12px);
+    padding-bottom: rem(12px);
   }
 
   &--small {
-    padding: rem(9px 22px);
+    padding: rem(8px 22px);
   }
 }

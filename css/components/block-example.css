@@ -28,18 +28,18 @@
   @media (min-width: 48rem) {
     .block-example__item {
       margin-top: 40px;
-      margin-left: 2.12766%;
-      width: 48.93617%; }
+      margin-left: 5.49451%;
+      width: 47.25275%; }
       .block-example__item:nth-child(2n + 1) {
         margin-left: 0; }
       .block-example__item:nth-child(1), .block-example__item:nth-child(2) {
         margin-top: 0; } }
   @media (min-width: 64rem) {
     .block-example__item {
-      margin-left: 3.15789%;
-      width: 31.22807%; }
+      margin-left: 3.37838%;
+      width: 31.08108%; }
       .block-example__item:nth-child(2n + 1) {
-        margin-left: 3.15789%; }
+        margin-left: 3.37838%; }
       .block-example__item:nth-child(3n + 1) {
         margin-left: 0; }
       .block-example__item:nth-child(3) {
@@ -48,22 +48,10 @@
     margin-top: 0; }
   @media (min-width: 80rem) {
     .block-example__item {
-      margin-left: 3.15789%;
-      width: 31.22807%; }
+      margin-left: 3.44828%;
+      width: 31.03448%; }
       .block-example__item:nth-child(2n + 1) {
-        margin-left: 3.15789%; }
-      .block-example__item:nth-child(3n + 1) {
-        margin-left: 0; }
-      .block-example__item:nth-child(3) {
-        margin-top: 0; } }
-  .block-example__item:nth-child(1) {
-    margin-top: 0; }
-  @media (min-width: 90rem) {
-    .block-example__item {
-      margin-left: 3.37838%;
-      width: 31.08108%; }
-      .block-example__item:nth-child(2n + 1) {
-        margin-left: 3.37838%; }
+        margin-left: 3.44828%; }
       .block-example__item:nth-child(3n + 1) {
         margin-left: 0; }
       .block-example__item:nth-child(3) {

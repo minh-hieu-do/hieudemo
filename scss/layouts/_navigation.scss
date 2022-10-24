@@ -1,6 +1,68 @@
 // Navigation.
-.nav {
+.header__wrap {
+
+}
+
+.header__helper {
+  display: flex;
+	justify-content: flex-end;
+  background-color: $light-gray;
+  height: 40px;
+
   ul {
-    margin-bottom: rem(10px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: center;
+    
+    li {
+      display: block;
+      margin-right: rem(31px);
+
+      &:nth-last-child(1) {
+        margin-right: 0;
+      }
+    }
   }
+}
+
+.header__nav {
+  display: flex;
+  margin: rem(10px) 0;
+}
+
+.header__logo {
+  display: block;
+  padding-right: rem(148px);
+}
+
+.header__menu {
+  margin: auto;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: center;
+
+    li {
+      margin-right: rem(66px);
+      display: block;
+    }
+  }
+}
+
+.header__btn {
+  margin-top: rem(15px);
+}
+
+.header__search {
+  margin: 22px 0 0 18px;
+}
+
+.icon-search2 {
+  font-size: 11px;
 }

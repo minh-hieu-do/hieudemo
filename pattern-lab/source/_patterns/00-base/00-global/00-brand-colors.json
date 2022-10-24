@@ -78,6 +78,18 @@
           "pattern": "base-colors-item",
           "with": {
             "item": {
+              "name": "$light-gray",
+              "id": "#f6f6f6"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-colors-item",
+          "with": {
+            "item": {
               "name": "$gray",
               "id": "#727272"
             }
