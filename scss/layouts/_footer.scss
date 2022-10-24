@@ -17,7 +17,9 @@
         }
       }
 
-    ul.menu {   
+    ul.menu {
+      margin-left: 0;
+
       li {
         margin-bottom: rem(19px);
         font-size: rem(14px);
@@ -31,12 +33,30 @@
   }
 }
 
+.block-system-branding-block {
+  @include susy-media(mobileOnly) {
+    display: none;
+  }
+
+  @include susy-media(tabletOnly) {
+    display: none;
+  }
+}
+
 .block-social {
   text-align: center;
-
+  margin-top: rem(20px);
+  
   a {
   margin-right: rem(35px);
   font-size: rem(18px);
+  text-indent: -999rem;
+  display: inline-block;
+
+  &::before {
+    float: left;
+    text-indent: 0;
+  }
 
   &:last-child() {
     margin-right: 0;

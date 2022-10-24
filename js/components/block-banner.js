@@ -18,4 +18,4 @@
 //   };
 // })(jQuery, Drupal, once);
 
-$(".js-block-banner__slider").slick();
+jQuery(".js-block-banner__slider").slick();
